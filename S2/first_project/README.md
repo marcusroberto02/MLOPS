@@ -55,3 +55,10 @@ Project Organization
 --------
 
 <p><small>Project based on the <a target="_blank" href="https://drivendata.github.io/cookiecutter-data-science/">cookiecutter data science project template</a>. #cookiecutterdatascience</small></p>
+
+
+<h3>Short introduction to code</h3>
+Run "make data" to process data set
+Run "make train" to train a model
+Run "python3 src/models/predict_model.py evaluate models/model.pt data/raw/test.npz" to predict on a data set
+Run "python3 src/visualization/visualize.py visualize models/model.pt data/raw/test.npz" to get 2d embedding visualizations
