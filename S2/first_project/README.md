@@ -58,7 +58,7 @@ Project Organization
 
 
 <h3>Short introduction to code</h3>
-Run "make data" to process data set
-Run "make train" to train a model
-Run "python3 src/models/predict_model.py evaluate models/model.pt data/raw/test.npz" to predict on a data set
-Run "python3 src/visualization/visualize.py visualize models/model.pt data/raw/test.npz" to get 2d embedding visualizations
+Run "make data" to process data set<br>
+Run "make train" to train a model<br>
+Run "python3 src/models/predict_model.py evaluate models/model.pt data/raw/test.npz" to predict on a data set<br>
+Run "python3 src/visualization/visualize.py visualize models/model.pt data/raw/test.npz" to get 2d embedding visualizations<br>
