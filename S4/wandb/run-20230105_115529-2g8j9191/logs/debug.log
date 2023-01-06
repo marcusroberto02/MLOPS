@@ -1,0 +1,24 @@
+2023-01-05 11:55:29,448 INFO    MainThread:5486 [wandb_setup.py:_flush():68] Configure stats pid to 5486
+2023-01-05 11:55:29,449 INFO    MainThread:5486 [wandb_setup.py:_flush():68] Loading settings from /home/marcusroberto/.config/wandb/settings
+2023-01-05 11:55:29,451 INFO    MainThread:5486 [wandb_setup.py:_flush():68] Loading settings from /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/settings
+2023-01-05 11:55:29,452 INFO    MainThread:5486 [wandb_setup.py:_flush():68] Loading settings from environment variables: {'_require_service': 'True'}
+2023-01-05 11:55:29,455 INFO    MainThread:5486 [wandb_setup.py:_flush():68] Inferring run settings from compute environment: {'program_relpath': 'S4/vae_mnist_working.py', 'program': '/mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/vae_mnist_working.py'}
+2023-01-05 11:55:29,458 INFO    MainThread:5486 [wandb_init.py:_log_setup():476] Logging user logs to /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115529-2g8j9191/logs/debug.log
+2023-01-05 11:55:29,461 INFO    MainThread:5486 [wandb_init.py:_log_setup():477] Logging internal logs to /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115529-2g8j9191/logs/debug-internal.log
+2023-01-05 11:55:29,476 INFO    MainThread:5486 [wandb_init.py:init():516] calling init triggers
+2023-01-05 11:55:29,478 INFO    MainThread:5486 [wandb_init.py:init():519] wandb.init called with sweep_config: {}
+config: {}
+2023-01-05 11:55:29,489 INFO    MainThread:5486 [wandb_init.py:init():569] starting backend
+2023-01-05 11:55:29,491 INFO    MainThread:5486 [wandb_init.py:init():573] setting up manager
+2023-01-05 11:55:29,527 INFO    MainThread:5486 [backend.py:_multiprocessing_setup():102] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2023-01-05 11:55:29,568 INFO    MainThread:5486 [wandb_init.py:init():580] backend started and connected
+2023-01-05 11:55:29,610 INFO    MainThread:5486 [wandb_init.py:init():658] updated telemetry
+2023-01-05 11:55:30,178 INFO    MainThread:5486 [wandb_init.py:init():693] communicating run to backend with 60 second timeout
+2023-01-05 11:55:31,093 INFO    MainThread:5486 [wandb_run.py:_on_init():2006] communicating current version
+2023-01-05 11:55:31,245 INFO    MainThread:5486 [wandb_run.py:_on_init():2010] got version response 
+2023-01-05 11:55:31,246 INFO    MainThread:5486 [wandb_init.py:init():728] starting run threads in backend
+2023-01-05 11:55:36,352 INFO    MainThread:5486 [wandb_run.py:_console_start():1986] atexit reg
+2023-01-05 11:55:36,362 INFO    MainThread:5486 [wandb_run.py:_redirect():1844] redirect: SettingsConsole.WRAP_RAW
+2023-01-05 11:55:36,363 INFO    MainThread:5486 [wandb_run.py:_redirect():1909] Wrapping output streams.
+2023-01-05 11:55:36,365 INFO    MainThread:5486 [wandb_run.py:_redirect():1931] Redirects installed.
+2023-01-05 11:55:36,367 INFO    MainThread:5486 [wandb_init.py:init():765] run started, returning control to user process

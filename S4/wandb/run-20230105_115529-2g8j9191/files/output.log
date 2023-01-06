@@ -1,0 +1,17 @@
+
+Start training VAE...
+	Epoch 1 complete! 	Average Loss:  158.45248387612165
+Traceback (most recent call last):
+  File "/mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/vae_mnist_working.py", line 110, in <module>
+    for batch_idx, (x, _) in enumerate(train_loader):
+  File "/home/marcusroberto/miniconda3/envs/myenv/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 628, in __next__
+    data = self._next_data()
+  File "/home/marcusroberto/miniconda3/envs/myenv/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 671, in _next_data
+    data = self._dataset_fetcher.fetch(index)  # may raise StopIteration
+  File "/home/marcusroberto/miniconda3/envs/myenv/lib/python3.10/site-packages/torch/utils/data/_utils/fetch.py", line 58, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/home/marcusroberto/miniconda3/envs/myenv/lib/python3.10/site-packages/torch/utils/data/_utils/fetch.py", line 58, in <listcomp>
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/home/marcusroberto/miniconda3/envs/myenv/lib/python3.10/site-packages/torchvision/datasets/mnist.py", line 142, in __getitem__
+    img = Image.fromarray(img.numpy(), mode="L")
+KeyboardInterrupt

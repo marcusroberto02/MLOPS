@@ -1,0 +1,815 @@
+2023-01-05 11:56:10,110 INFO    StreamThr :8363 [internal.py:wandb_internal():87] W&B internal server running at pid: 8363, started at: 2023-01-05 11:56:10.101559
+2023-01-05 11:56:10,117 DEBUG   HandlerThread:8363 [handler.py:handle_request():139] handle_request: status
+2023-01-05 11:56:10,136 DEBUG   SenderThread:8363 [sender.py:send_request():317] send_request: status
+2023-01-05 11:56:10,164 DEBUG   SenderThread:8363 [sender.py:send():303] send: header
+2023-01-05 11:56:10,165 INFO    WriterThread:8363 [datastore.py:open_for_write():75] open: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/run-1p3d23l6.wandb
+2023-01-05 11:56:10,779 DEBUG   SenderThread:8363 [sender.py:send():303] send: run
+2023-01-05 11:56:11,712 DEBUG   HandlerThread:8363 [handler.py:handle_request():139] handle_request: check_version
+2023-01-05 11:56:11,746 INFO    SenderThread:8363 [dir_watcher.py:__init__():216] watching files in: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files
+2023-01-05 11:56:11,748 INFO    SenderThread:8363 [sender.py:_start_run_threads():928] run started: 1p3d23l6 with start time 1672916170.126891
+2023-01-05 11:56:11,750 DEBUG   SenderThread:8363 [sender.py:send():303] send: summary
+2023-01-05 11:56:11,767 INFO    SenderThread:8363 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2023-01-05 11:56:11,777 DEBUG   SenderThread:8363 [sender.py:send_request():317] send_request: check_version
+2023-01-05 11:56:11,975 DEBUG   HandlerThread:8363 [handler.py:handle_request():139] handle_request: run_start
+2023-01-05 11:56:11,978 DEBUG   HandlerThread:8363 [system_info.py:__init__():31] System info init
+2023-01-05 11:56:11,980 DEBUG   HandlerThread:8363 [system_info.py:__init__():46] System info init done
+2023-01-05 11:56:11,981 INFO    HandlerThread:8363 [system_monitor.py:start():150] Starting system monitor
+2023-01-05 11:56:11,983 INFO    SystemMonitor:8363 [system_monitor.py:_start():116] Starting system asset monitoring threads
+2023-01-05 11:56:11,983 INFO    HandlerThread:8363 [system_monitor.py:probe():171] Collecting system info
+2023-01-05 11:56:11,986 INFO    SystemMonitor:8363 [interfaces.py:start():168] Started cpu
+2023-01-05 11:56:11,993 INFO    SystemMonitor:8363 [interfaces.py:start():168] Started disk
+2023-01-05 11:56:11,995 INFO    SystemMonitor:8363 [interfaces.py:start():168] Started memory
+2023-01-05 11:56:11,998 INFO    SystemMonitor:8363 [interfaces.py:start():168] Started network
+2023-01-05 11:56:12,001 DEBUG   HandlerThread:8363 [system_info.py:probe():195] Probing system
+2023-01-05 11:56:12,087 DEBUG   HandlerThread:8363 [system_info.py:_probe_git():180] Probing git
+2023-01-05 11:56:12,736 DEBUG   HandlerThread:8363 [system_info.py:_probe_git():188] Probing git done
+2023-01-05 11:56:12,739 DEBUG   HandlerThread:8363 [system_info.py:probe():241] Probing system done
+2023-01-05 11:56:12,741 DEBUG   HandlerThread:8363 [system_monitor.py:probe():180] {'os': 'Linux-5.15.79.1-microsoft-standard-WSL2-x86_64-with-glibc2.35', 'python': '3.10.8', 'heartbeatAt': '2023-01-05T10:56:12.003542', 'startedAt': '2023-01-05T10:56:09.732388', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': '/mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/vae_mnist_working.py', 'codePath': 'S4/vae_mnist_working.py', 'git': {'remote': 'ssh://github.com/marcusroberto02/MLOPS.git', 'commit': 'c12685f994075982ad0364227db89ec25cc7c393'}, 'email': 'marcusrobertonielsen02@gmail.com', 'root': '/mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS', 'host': 'DESKTOP-48IBAR0', 'username': 'marcusroberto', 'executable': '/home/marcusroberto/miniconda3/envs/myenv/bin/python', 'cpu_count': 4, 'cpu_count_logical': 8, 'cpu_freq': {'current': 1497.6039999999998, 'min': 0.0, 'max': 0.0}, 'cpu_freq_per_core': [{'current': 1497.604, 'min': 0.0, 'max': 0.0}, {'current': 1497.604, 'min': 0.0, 'max': 0.0}, {'current': 1497.604, 'min': 0.0, 'max': 0.0}, {'current': 1497.604, 'min': 0.0, 'max': 0.0}, {'current': 1497.604, 'min': 0.0, 'max': 0.0}, {'current': 1497.604, 'min': 0.0, 'max': 0.0}, {'current': 1497.604, 'min': 0.0, 'max': 0.0}, {'current': 1497.604, 'min': 0.0, 'max': 0.0}], 'disk': {'total': 1006.853931427002, 'used': 10.27706527709961}, 'memory': {'total': 7.558567047119141}}
+2023-01-05 11:56:12,747 INFO    HandlerThread:8363 [system_monitor.py:probe():181] Finished collecting system info
+2023-01-05 11:56:12,748 INFO    HandlerThread:8363 [system_monitor.py:probe():184] Publishing system info
+2023-01-05 11:56:12,750 DEBUG   HandlerThread:8363 [system_info.py:_save_pip():51] Saving list of pip packages installed into the current environment
+2023-01-05 11:56:12,766 DEBUG   HandlerThread:8363 [system_info.py:_save_pip():67] Saving pip packages done
+2023-01-05 11:56:12,769 DEBUG   HandlerThread:8363 [system_info.py:_save_conda():74] Saving list of conda packages installed into the current environment
+2023-01-05 11:56:12,796 INFO    Thread-13 :8363 [dir_watcher.py:_on_file_created():275] file/dir created: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/wandb-summary.json
+2023-01-05 11:56:12,803 INFO    Thread-13 :8363 [dir_watcher.py:_on_file_created():275] file/dir created: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/requirements.txt
+2023-01-05 11:56:13,820 INFO    Thread-13 :8363 [dir_watcher.py:_on_file_created():275] file/dir created: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/conda-environment.yaml
+2023-01-05 11:56:20,437 DEBUG   HandlerThread:8363 [system_info.py:_save_conda():86] Saving conda packages done
+2023-01-05 11:56:20,448 INFO    HandlerThread:8363 [system_monitor.py:probe():186] Finished publishing system info
+2023-01-05 11:56:20,618 DEBUG   HandlerThread:8363 [handler.py:handle_request():139] handle_request: stop_status
+2023-01-05 11:56:20,621 DEBUG   SenderThread:8363 [sender.py:send_request():317] send_request: stop_status
+2023-01-05 11:56:20,858 DEBUG   SenderThread:8363 [sender.py:send():303] send: telemetry
+2023-01-05 11:56:20,868 DEBUG   SenderThread:8363 [sender.py:send():303] send: files
+2023-01-05 11:56:20,871 INFO    SenderThread:8363 [sender.py:_save_file():1171] saving file wandb-metadata.json with policy now
+2023-01-05 11:56:20,998 INFO    Thread-13 :8363 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/conda-environment.yaml
+2023-01-05 11:56:21,004 INFO    Thread-13 :8363 [dir_watcher.py:_on_file_created():275] file/dir created: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/output.log
+2023-01-05 11:56:21,006 INFO    Thread-13 :8363 [dir_watcher.py:_on_file_created():275] file/dir created: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/wandb-metadata.json
+2023-01-05 11:56:21,523 INFO    Thread-16 :8363 [upload_job.py:push():143] Uploaded file /tmp/tmpq4bnzh21wandb/3cnpqvwq-wandb-metadata.json
+2023-01-05 11:56:23,044 INFO    Thread-13 :8363 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/output.log
+2023-01-05 11:56:31,563 DEBUG   HandlerThread:8363 [handler.py:handle_request():139] handle_request: partial_history
+2023-01-05 11:56:31,565 DEBUG   SenderThread:8363 [sender.py:send():303] send: history
+2023-01-05 11:56:31,566 DEBUG   SenderThread:8363 [sender.py:send():303] send: summary
+2023-01-05 11:56:31,578 INFO    SenderThread:8363 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2023-01-05 11:56:32,258 INFO    Thread-13 :8363 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/wandb-summary.json
+2023-01-05 11:56:33,278 INFO    Thread-13 :8363 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/output.log
+2023-01-05 11:56:35,862 DEBUG   HandlerThread:8363 [handler.py:handle_request():139] handle_request: stop_status
+2023-01-05 11:56:35,863 DEBUG   SenderThread:8363 [sender.py:send_request():317] send_request: stop_status
+2023-01-05 11:56:41,501 INFO    Thread-13 :8363 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/config.yaml
+2023-01-05 11:56:47,482 DEBUG   HandlerThread:8363 [handler.py:handle_request():139] handle_request: partial_history
+2023-01-05 11:56:47,484 DEBUG   SenderThread:8363 [sender.py:send():303] send: history
+2023-01-05 11:56:47,488 DEBUG   SenderThread:8363 [sender.py:send():303] send: summary
+2023-01-05 11:56:47,502 INFO    SenderThread:8363 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2023-01-05 11:56:47,631 INFO    Thread-13 :8363 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/wandb-summary.json
+2023-01-05 11:56:49,689 INFO    Thread-13 :8363 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/output.log
+2023-01-05 11:56:51,089 DEBUG   HandlerThread:8363 [handler.py:handle_request():139] handle_request: stop_status
+2023-01-05 11:56:51,090 DEBUG   SenderThread:8363 [sender.py:send_request():317] send_request: stop_status
+2023-01-05 11:57:01,611 DEBUG   HandlerThread:8363 [handler.py:handle_request():139] handle_request: partial_history
+2023-01-05 11:57:01,613 DEBUG   SenderThread:8363 [sender.py:send():303] send: history
+2023-01-05 11:57:01,614 DEBUG   SenderThread:8363 [sender.py:send():303] send: summary
+2023-01-05 11:57:01,625 INFO    SenderThread:8363 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2023-01-05 11:57:01,966 INFO    Thread-13 :8363 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/wandb-summary.json
+2023-01-05 11:57:02,983 INFO    Thread-13 :8363 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/output.log
+2023-01-05 11:57:06,407 DEBUG   HandlerThread:8363 [handler.py:handle_request():139] handle_request: stop_status
+2023-01-05 11:57:06,408 DEBUG   SenderThread:8363 [sender.py:send_request():317] send_request: stop_status
+2023-01-05 11:57:12,000 DEBUG   SystemMonitor:8363 [system_monitor.py:_start():130] Starting system metrics aggregation loop
+2023-01-05 11:57:12,002 DEBUG   SenderThread:8363 [sender.py:send():303] send: stats
+2023-01-05 11:57:14,943 DEBUG   HandlerThread:8363 [handler.py:handle_request():139] handle_request: partial_history
+2023-01-05 11:57:14,945 DEBUG   SenderThread:8363 [sender.py:send():303] send: history
+2023-01-05 11:57:14,946 DEBUG   SenderThread:8363 [sender.py:send():303] send: summary
+2023-01-05 11:57:14,958 INFO    SenderThread:8363 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2023-01-05 11:57:15,295 INFO    Thread-13 :8363 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/wandb-summary.json
+2023-01-05 11:57:17,342 INFO    Thread-13 :8363 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/output.log
+2023-01-05 11:57:21,668 DEBUG   HandlerThread:8363 [handler.py:handle_request():139] handle_request: stop_status
+2023-01-05 11:57:21,669 DEBUG   SenderThread:8363 [sender.py:send_request():317] send_request: stop_status
+2023-01-05 11:57:28,263 DEBUG   HandlerThread:8363 [handler.py:handle_request():139] handle_request: partial_history
+2023-01-05 11:57:28,265 DEBUG   SenderThread:8363 [sender.py:send():303] send: history
+2023-01-05 11:57:28,267 DEBUG   SenderThread:8363 [sender.py:send():303] send: summary
+2023-01-05 11:57:28,279 INFO    SenderThread:8363 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2023-01-05 11:57:28,613 INFO    Thread-13 :8363 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/wandb-summary.json
+2023-01-05 11:57:29,007 DEBUG   SenderThread:8363 [sender.py:send():303] send: files
+2023-01-05 11:57:29,009 INFO    SenderThread:8363 [sender.py:_save_file():1171] saving file media/images/Image plot_5_449810b2c364ceb2b85b.png with policy now
+2023-01-05 11:57:29,048 DEBUG   SenderThread:8363 [sender.py:send():303] send: files
+2023-01-05 11:57:29,050 INFO    SenderThread:8363 [sender.py:_save_file():1171] saving file media/images/Image plot_5_18f390eb79f344f0a7c8.png with policy now
+2023-01-05 11:57:29,096 DEBUG   SenderThread:8363 [sender.py:send():303] send: files
+2023-01-05 11:57:29,098 INFO    SenderThread:8363 [sender.py:_save_file():1171] saving file media/images/Image plot_5_1ee28a2050055b2700aa.png with policy now
+2023-01-05 11:57:29,141 DEBUG   SenderThread:8363 [sender.py:send():303] send: files
+2023-01-05 11:57:29,142 INFO    SenderThread:8363 [sender.py:_save_file():1171] saving file media/images/Image plot_5_28b855be952b345c8db5.png with policy now
+2023-01-05 11:57:29,172 DEBUG   SenderThread:8363 [sender.py:send():303] send: files
+2023-01-05 11:57:29,173 INFO    SenderThread:8363 [sender.py:_save_file():1171] saving file media/images/Image plot_5_009e9f7e2b492dfe713e.png with policy now
+2023-01-05 11:57:29,207 DEBUG   SenderThread:8363 [sender.py:send():303] send: files
+2023-01-05 11:57:29,209 INFO    SenderThread:8363 [sender.py:_save_file():1171] saving file media/images/Image plot_5_46493d3cd622b3350479.png with policy now
+2023-01-05 11:57:29,240 DEBUG   SenderThread:8363 [sender.py:send():303] send: files
+2023-01-05 11:57:29,241 INFO    SenderThread:8363 [sender.py:_save_file():1171] saving file media/images/Image plot_5_80f9a26306c13d205b80.png with policy now
+2023-01-05 11:57:29,282 DEBUG   SenderThread:8363 [sender.py:send():303] send: files
+2023-01-05 11:57:29,284 INFO    SenderThread:8363 [sender.py:_save_file():1171] saving file media/images/Image plot_5_9f8709b6efe36781dcc4.png with policy now
+2023-01-05 11:57:29,332 DEBUG   SenderThread:8363 [sender.py:send():303] send: files
+2023-01-05 11:57:29,334 INFO    SenderThread:8363 [sender.py:_save_file():1171] saving file media/images/Image plot_5_07a860f2a6ee96a2cf05.png with policy now
+2023-01-05 11:57:29,376 DEBUG   SenderThread:8363 [sender.py:send():303] send: files
+2023-01-05 11:57:29,377 INFO    SenderThread:8363 [sender.py:_save_file():1171] saving file media/images/Image plot_5_b901db677b6489ade381.png with policy now
+2023-01-05 11:57:29,421 DEBUG   SenderThread:8363 [sender.py:send():303] send: files
+2023-01-05 11:57:29,423 INFO    SenderThread:8363 [sender.py:_save_file():1171] saving file media/images/Image plot_5_18653ac37296fa650634.png with policy now
+2023-01-05 11:57:29,476 DEBUG   SenderThread:8363 [sender.py:send():303] send: files
+2023-01-05 11:57:29,482 INFO    SenderThread:8363 [sender.py:_save_file():1171] saving file media/images/Image plot_5_bd83d44a6ee1011b1fd4.png with policy now
+2023-01-05 11:57:29,523 DEBUG   SenderThread:8363 [sender.py:send():303] send: files
+2023-01-05 11:57:29,526 INFO    SenderThread:8363 [sender.py:_save_file():1171] saving file media/images/Image plot_5_9863ed6dda308fe38671.png with policy now
+2023-01-05 11:57:29,570 DEBUG   SenderThread:8363 [sender.py:send():303] send: files
+2023-01-05 11:57:29,571 INFO    SenderThread:8363 [sender.py:_save_file():1171] saving file media/images/Image plot_5_f78b5e082139199a15f8.png with policy now
+2023-01-05 11:57:29,609 DEBUG   SenderThread:8363 [sender.py:send():303] send: files
+2023-01-05 11:57:29,610 INFO    SenderThread:8363 [sender.py:_save_file():1171] saving file media/images/Image plot_5_167499c49be8bb6764f6.png with policy now
+2023-01-05 11:57:29,661 DEBUG   SenderThread:8363 [sender.py:send():303] send: files
+2023-01-05 11:57:29,663 INFO    SenderThread:8363 [sender.py:_save_file():1171] saving file media/images/Image plot_5_e050176ec405e615f469.png with policy now
+2023-01-05 11:57:29,712 INFO    Thread-17 :8363 [upload_job.py:push():143] Uploaded file /tmp/tmpq4bnzh21wandb/1nn7vsag-media/images/Image plot_5_449810b2c364ceb2b85b.png
+2023-01-05 11:57:29,716 DEBUG   SenderThread:8363 [sender.py:send():303] send: files
+2023-01-05 11:57:29,718 INFO    SenderThread:8363 [sender.py:_save_file():1171] saving file media/images/Image plot_5_1bcd393ea658cc8d5f38.png with policy now
+2023-01-05 11:57:29,747 DEBUG   SenderThread:8363 [sender.py:send():303] send: files
+2023-01-05 11:57:29,750 INFO    SenderThread:8363 [sender.py:_save_file():1171] saving file media/images/Image plot_5_f5ac652fba4cfe8fda1a.png with policy now
+2023-01-05 11:57:29,761 INFO    Thread-18 :8363 [upload_job.py:push():143] Uploaded file /tmp/tmpq4bnzh21wandb/39f2hn9m-media/images/Image plot_5_18f390eb79f344f0a7c8.png
+2023-01-05 11:57:29,790 INFO    Thread-19 :8363 [upload_job.py:push():143] Uploaded file /tmp/tmpq4bnzh21wandb/17ruviz1-media/images/Image plot_5_1ee28a2050055b2700aa.png
+2023-01-05 11:57:29,802 DEBUG   SenderThread:8363 [sender.py:send():303] send: files
+2023-01-05 11:57:29,805 INFO    Thread-13 :8363 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/output.log
+2023-01-05 11:57:29,805 INFO    SenderThread:8363 [sender.py:_save_file():1171] saving file media/images/Image plot_5_a21c5077494143505cb8.png with policy now
+2023-01-05 11:57:29,808 INFO    Thread-13 :8363 [dir_watcher.py:_on_file_created():275] file/dir created: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/media/images/Image plot_5_9f8709b6efe36781dcc4.png
+2023-01-05 11:57:29,843 INFO    Thread-13 :8363 [dir_watcher.py:_on_file_created():275] file/dir created: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/media/images/Image plot_5_167499c49be8bb6764f6.png
+2023-01-05 11:57:29,844 DEBUG   SenderThread:8363 [sender.py:send():303] send: files
+2023-01-05 11:57:29,846 INFO    SenderThread:8363 [sender.py:_save_file():1171] saving file media/images/Image plot_5_c64d6454c6d2f8670fd9.png with policy now
+2023-01-05 11:57:29,862 INFO    Thread-21 :8363 [upload_job.py:push():143] Uploaded file /tmp/tmpq4bnzh21wandb/2buyg246-media/images/Image plot_5_009e9f7e2b492dfe713e.png
+2023-01-05 11:57:29,870 INFO    Thread-20 :8363 [upload_job.py:push():143] Uploaded file /tmp/tmpq4bnzh21wandb/3ff3z27n-media/images/Image plot_5_28b855be952b345c8db5.png
+2023-01-05 11:57:29,880 INFO    Thread-13 :8363 [dir_watcher.py:_on_file_created():275] file/dir created: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/media/images/Image plot_5_1ee28a2050055b2700aa.png
+2023-01-05 11:57:29,894 DEBUG   SenderThread:8363 [sender.py:send():303] send: files
+2023-01-05 11:57:29,898 INFO    SenderThread:8363 [sender.py:_save_file():1171] saving file media/images/Image plot_5_aa74b770cbe648f39080.png with policy now
+2023-01-05 11:57:29,920 INFO    Thread-22 :8363 [upload_job.py:push():143] Uploaded file /tmp/tmpq4bnzh21wandb/2kos9gmu-media/images/Image plot_5_46493d3cd622b3350479.png
+2023-01-05 11:57:29,926 INFO    Thread-13 :8363 [dir_watcher.py:_on_file_created():275] file/dir created: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/media/images/Image plot_5_46493d3cd622b3350479.png
+2023-01-05 11:57:29,937 DEBUG   SenderThread:8363 [sender.py:send():303] send: files
+2023-01-05 11:57:29,940 INFO    SenderThread:8363 [sender.py:_save_file():1171] saving file media/images/Image plot_5_3dc2614179b196ee4703.png with policy now
+2023-01-05 11:57:29,962 INFO    Thread-13 :8363 [dir_watcher.py:_on_file_created():275] file/dir created: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/media/images/Image plot_5_18653ac37296fa650634.png
+2023-01-05 11:57:29,976 DEBUG   SenderThread:8363 [sender.py:send():303] send: files
+2023-01-05 11:57:29,980 INFO    SenderThread:8363 [sender.py:_save_file():1171] saving file media/images/Image plot_5_26bdfb4f9aa337254eda.png with policy now
+2023-01-05 11:57:29,985 INFO    Thread-23 :8363 [upload_job.py:push():143] Uploaded file /tmp/tmpq4bnzh21wandb/1pyu0i5r-media/images/Image plot_5_80f9a26306c13d205b80.png
+2023-01-05 11:57:29,994 INFO    Thread-13 :8363 [dir_watcher.py:_on_file_created():275] file/dir created: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/media/images/Image plot_5_009e9f7e2b492dfe713e.png
+2023-01-05 11:57:30,015 DEBUG   SenderThread:8363 [sender.py:send():303] send: files
+2023-01-05 11:57:30,016 INFO    SenderThread:8363 [sender.py:_save_file():1171] saving file media/images/Image plot_5_31e174f627729721da80.png with policy now
+2023-01-05 11:57:30,023 INFO    Thread-13 :8363 [dir_watcher.py:_on_file_created():275] file/dir created: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/media/images/Image plot_5_07a860f2a6ee96a2cf05.png
+2023-01-05 11:57:30,059 INFO    Thread-24 :8363 [upload_job.py:push():143] Uploaded file /tmp/tmpq4bnzh21wandb/1egdzbir-media/images/Image plot_5_9f8709b6efe36781dcc4.png
+2023-01-05 11:57:30,066 DEBUG   SenderThread:8363 [sender.py:send():303] send: files
+2023-01-05 11:57:30,067 INFO    SenderThread:8363 [sender.py:_save_file():1171] saving file media/images/Image plot_5_987e213e464058d2c7bf.png with policy now
+2023-01-05 11:57:30,078 INFO    Thread-13 :8363 [dir_watcher.py:_on_file_created():275] file/dir created: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/media/images/Image plot_5_80f9a26306c13d205b80.png
+2023-01-05 11:57:30,108 INFO    Thread-25 :8363 [upload_job.py:push():143] Uploaded file /tmp/tmpq4bnzh21wandb/10s44w6p-media/images/Image plot_5_07a860f2a6ee96a2cf05.png
+2023-01-05 11:57:30,117 DEBUG   SenderThread:8363 [sender.py:send():303] send: files
+2023-01-05 11:57:30,122 INFO    SenderThread:8363 [sender.py:_save_file():1171] saving file media/images/Image plot_5_a6929db96822b7de6f82.png with policy now
+2023-01-05 11:57:30,130 INFO    Thread-13 :8363 [dir_watcher.py:_on_file_created():275] file/dir created: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/media/images/Image plot_5_449810b2c364ceb2b85b.png
+2023-01-05 11:57:30,162 DEBUG   SenderThread:8363 [sender.py:send():303] send: files
+2023-01-05 11:57:30,163 INFO    Thread-13 :8363 [dir_watcher.py:_on_file_created():275] file/dir created: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/media/images/Image plot_5_bd83d44a6ee1011b1fd4.png
+2023-01-05 11:57:30,164 INFO    SenderThread:8363 [sender.py:_save_file():1171] saving file media/images/Image plot_5_6886697fd5f83f4c356d.png with policy now
+2023-01-05 11:57:30,189 INFO    Thread-26 :8363 [upload_job.py:push():143] Uploaded file /tmp/tmpq4bnzh21wandb/2rgwuq2c-media/images/Image plot_5_b901db677b6489ade381.png
+2023-01-05 11:57:30,199 INFO    Thread-27 :8363 [upload_job.py:push():143] Uploaded file /tmp/tmpq4bnzh21wandb/1a59i8yu-media/images/Image plot_5_18653ac37296fa650634.png
+2023-01-05 11:57:30,207 INFO    Thread-13 :8363 [dir_watcher.py:_on_file_created():275] file/dir created: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/media/images/Image plot_5_9863ed6dda308fe38671.png
+2023-01-05 11:57:30,213 DEBUG   SenderThread:8363 [sender.py:send():303] send: files
+2023-01-05 11:57:30,217 INFO    SenderThread:8363 [sender.py:_save_file():1171] saving file media/images/Image plot_5_bd7ca669048182124cbe.png with policy now
+2023-01-05 11:57:30,254 INFO    Thread-13 :8363 [dir_watcher.py:_on_file_created():275] file/dir created: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/media/images/Image plot_5_f78b5e082139199a15f8.png
+2023-01-05 11:57:30,260 DEBUG   SenderThread:8363 [sender.py:send():303] send: files
+2023-01-05 11:57:30,262 INFO    SenderThread:8363 [sender.py:_save_file():1171] saving file media/images/Image plot_5_5d754a74f926e6bd3dab.png with policy now
+2023-01-05 11:57:30,274 INFO    Thread-28 :8363 [upload_job.py:push():143] Uploaded file /tmp/tmpq4bnzh21wandb/1uhzcyv9-media/images/Image plot_5_bd83d44a6ee1011b1fd4.png
+2023-01-05 11:57:30,302 INFO    Thread-13 :8363 [dir_watcher.py:_on_file_created():275] file/dir created: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/media/images/Image plot_5_18f390eb79f344f0a7c8.png
+2023-01-05 11:57:30,303 DEBUG   SenderThread:8363 [sender.py:send():303] send: files
+2023-01-05 11:57:30,309 INFO    SenderThread:8363 [sender.py:_save_file():1171] saving file media/images/Image plot_5_a008bcf7dc183f0de3b4.png with policy now
+2023-01-05 11:57:30,352 INFO    Thread-29 :8363 [upload_job.py:push():143] Uploaded file /tmp/tmpq4bnzh21wandb/2iqepbwz-media/images/Image plot_5_9863ed6dda308fe38671.png
+2023-01-05 11:57:30,363 INFO    Thread-13 :8363 [dir_watcher.py:_on_file_created():275] file/dir created: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/media/images/Image plot_5_b901db677b6489ade381.png
+2023-01-05 11:57:30,373 DEBUG   SenderThread:8363 [sender.py:send():303] send: files
+2023-01-05 11:57:30,375 INFO    SenderThread:8363 [sender.py:_save_file():1171] saving file media/images/Image plot_5_30bf50095f3c424ecbf9.png with policy now
+2023-01-05 11:57:30,383 INFO    Thread-30 :8363 [upload_job.py:push():143] Uploaded file /tmp/tmpq4bnzh21wandb/170t7uq9-media/images/Image plot_5_f78b5e082139199a15f8.png
+2023-01-05 11:57:30,415 INFO    Thread-13 :8363 [dir_watcher.py:_on_file_created():275] file/dir created: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/media/images/Image plot_5_28b855be952b345c8db5.png
+2023-01-05 11:57:30,429 INFO    Thread-31 :8363 [upload_job.py:push():143] Uploaded file /tmp/tmpq4bnzh21wandb/2cxxnpgm-media/images/Image plot_5_167499c49be8bb6764f6.png
+2023-01-05 11:57:30,444 DEBUG   SenderThread:8363 [sender.py:send():303] send: files
+2023-01-05 11:57:30,445 INFO    SenderThread:8363 [sender.py:_save_file():1171] saving file media/images/Image plot_5_b4771470bae6067687f8.png with policy now
+2023-01-05 11:57:30,465 INFO    Thread-13 :8363 [dir_watcher.py:_on_file_created():275] file/dir created: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/media/images/Image plot_5_e050176ec405e615f469.png
+2023-01-05 11:57:30,480 DEBUG   SenderThread:8363 [sender.py:send():303] send: files
+2023-01-05 11:57:30,481 INFO    SenderThread:8363 [sender.py:_save_file():1171] saving file media/images/Image plot_5_3688b645792a20f16b50.png with policy now
+2023-01-05 11:57:30,502 INFO    Thread-32 :8363 [upload_job.py:push():143] Uploaded file /tmp/tmpq4bnzh21wandb/2bz4ee9q-media/images/Image plot_5_e050176ec405e615f469.png
+2023-01-05 11:57:30,507 INFO    Thread-13 :8363 [dir_watcher.py:_on_file_created():275] file/dir created: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/media/images/Image plot_5_1bcd393ea658cc8d5f38.png
+2023-01-05 11:57:30,516 DEBUG   SenderThread:8363 [sender.py:send():303] send: files
+2023-01-05 11:57:30,518 INFO    SenderThread:8363 [sender.py:_save_file():1171] saving file media/images/Image plot_5_53cf690478fd772d81b5.png with policy now
+2023-01-05 11:57:30,542 INFO    Thread-33 :8363 [upload_job.py:push():143] Uploaded file /tmp/tmpq4bnzh21wandb/wdzq4pd6-media/images/Image plot_5_1bcd393ea658cc8d5f38.png
+2023-01-05 11:57:30,551 INFO    Thread-13 :8363 [dir_watcher.py:_on_file_created():275] file/dir created: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/media
+2023-01-05 11:57:30,558 INFO    Thread-13 :8363 [dir_watcher.py:_on_file_created():275] file/dir created: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/media/images
+2023-01-05 11:57:30,566 DEBUG   SenderThread:8363 [sender.py:send():303] send: files
+2023-01-05 11:57:30,568 INFO    SenderThread:8363 [sender.py:_save_file():1171] saving file media/images/Image plot_5_45ec14f4ae9105da8e6d.png with policy now
+2023-01-05 11:57:30,589 INFO    Thread-34 :8363 [upload_job.py:push():143] Uploaded file /tmp/tmpq4bnzh21wandb/3rnbv34p-media/images/Image plot_5_f5ac652fba4cfe8fda1a.png
+2023-01-05 11:57:30,619 DEBUG   SenderThread:8363 [sender.py:send():303] send: files
+2023-01-05 11:57:30,623 INFO    SenderThread:8363 [sender.py:_save_file():1171] saving file media/images/Image plot_5_8e384070e1544730e8c4.png with policy now
+2023-01-05 11:57:30,673 DEBUG   SenderThread:8363 [sender.py:send():303] send: files
+2023-01-05 11:57:30,675 INFO    SenderThread:8363 [sender.py:_save_file():1171] saving file media/images/Image plot_5_221dce3b844b0450e21c.png with policy now
+2023-01-05 11:57:30,696 INFO    Thread-35 :8363 [upload_job.py:push():143] Uploaded file /tmp/tmpq4bnzh21wandb/sxbtlxjk-media/images/Image plot_5_a21c5077494143505cb8.png
+2023-01-05 11:57:30,722 DEBUG   SenderThread:8363 [sender.py:send():303] send: files
+2023-01-05 11:57:30,724 INFO    SenderThread:8363 [sender.py:_save_file():1171] saving file media/images/Image plot_5_7c1fa883b496ffacae72.png with policy now
+2023-01-05 11:57:30,782 INFO    Thread-36 :8363 [upload_job.py:push():143] Uploaded file /tmp/tmpq4bnzh21wandb/3b12diqo-media/images/Image plot_5_9f8709b6efe36781dcc4.png
+2023-01-05 11:57:30,785 DEBUG   SenderThread:8363 [sender.py:send():303] send: files
+2023-01-05 11:57:30,788 INFO    SenderThread:8363 [sender.py:_save_file():1171] saving file media/images/Image plot_5_700c38d46a6dbe9c33e5.png with policy now
+2023-01-05 11:57:30,829 DEBUG   SenderThread:8363 [sender.py:send():303] send: files
+2023-01-05 11:57:30,832 INFO    SenderThread:8363 [sender.py:_save_file():1171] saving file media/images/Image plot_5_0d65537067c51e6a194f.png with policy now
+2023-01-05 11:57:30,856 INFO    Thread-37 :8363 [upload_job.py:push():143] Uploaded file /tmp/tmpq4bnzh21wandb/1v2q3ejz-media/images/Image plot_5_c64d6454c6d2f8670fd9.png
+2023-01-05 11:57:30,882 DEBUG   SenderThread:8363 [sender.py:send():303] send: files
+2023-01-05 11:57:30,884 INFO    SenderThread:8363 [sender.py:_save_file():1171] saving file media/images/Image plot_5_95d5558996cd84d1ad52.png with policy now
+2023-01-05 11:57:30,930 DEBUG   SenderThread:8363 [sender.py:send():303] send: files
+2023-01-05 11:57:30,932 INFO    SenderThread:8363 [sender.py:_save_file():1171] saving file media/images/Image plot_5_88841dfdd54ba28b6744.png with policy now
+2023-01-05 11:57:30,970 INFO    Thread-38 :8363 [upload_job.py:push():143] Uploaded file /tmp/tmpq4bnzh21wandb/3247zb7z-media/images/Image plot_5_1ee28a2050055b2700aa.png
+2023-01-05 11:57:30,980 DEBUG   SenderThread:8363 [sender.py:send():303] send: files
+2023-01-05 11:57:30,982 INFO    SenderThread:8363 [sender.py:_save_file():1171] saving file media/images/Image plot_5_04fb222b1bbf84d8b210.png with policy now
+2023-01-05 11:57:31,022 DEBUG   SenderThread:8363 [sender.py:send():303] send: files
+2023-01-05 11:57:31,024 INFO    SenderThread:8363 [sender.py:_save_file():1171] saving file media/images/Image plot_5_df7c6c614d89d2c95caf.png with policy now
+2023-01-05 11:57:31,074 INFO    Thread-39 :8363 [upload_job.py:push():143] Uploaded file /tmp/tmpq4bnzh21wandb/22smz2ha-media/images/Image plot_5_aa74b770cbe648f39080.png
+2023-01-05 11:57:31,076 INFO    Thread-40 :8363 [upload_job.py:push():143] Uploaded file /tmp/tmpq4bnzh21wandb/1899pvqj-media/images/Image plot_5_167499c49be8bb6764f6.png
+2023-01-05 11:57:31,082 DEBUG   SenderThread:8363 [sender.py:send():303] send: files
+2023-01-05 11:57:31,093 INFO    SenderThread:8363 [sender.py:_save_file():1171] saving file media/images/Image plot_5_14245b091ce1f01b5a7e.png with policy now
+2023-01-05 11:57:31,121 DEBUG   SenderThread:8363 [sender.py:send():303] send: files
+2023-01-05 11:57:31,123 INFO    SenderThread:8363 [sender.py:_save_file():1171] saving file media/images/Image plot_5_c91c8be862d77a242713.png with policy now
+2023-01-05 11:57:31,165 INFO    Thread-42 :8363 [upload_job.py:push():143] Uploaded file /tmp/tmpq4bnzh21wandb/3s3h0kq3-media/images/Image plot_5_3dc2614179b196ee4703.png
+2023-01-05 11:57:31,172 DEBUG   SenderThread:8363 [sender.py:send():303] send: files
+2023-01-05 11:57:31,174 INFO    SenderThread:8363 [sender.py:_save_file():1171] saving file media/images/Image plot_5_b474ea930f3b2f5d0d1f.png with policy now
+2023-01-05 11:57:31,187 INFO    Thread-41 :8363 [upload_job.py:push():143] Uploaded file /tmp/tmpq4bnzh21wandb/25i8quh2-media/images/Image plot_5_46493d3cd622b3350479.png
+2023-01-05 11:57:31,191 INFO    Thread-13 :8363 [dir_watcher.py:_on_file_created():275] file/dir created: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/media/images/Image plot_5_f5ac652fba4cfe8fda1a.png
+2023-01-05 11:57:31,213 DEBUG   SenderThread:8363 [sender.py:send():303] send: files
+2023-01-05 11:57:31,214 INFO    SenderThread:8363 [sender.py:_save_file():1171] saving file media/images/Image plot_5_25b8622bc30c7302be22.png with policy now
+2023-01-05 11:57:31,218 INFO    Thread-13 :8363 [dir_watcher.py:_on_file_created():275] file/dir created: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/media/images/Image plot_5_a6929db96822b7de6f82.png
+2023-01-05 11:57:31,260 INFO    Thread-13 :8363 [dir_watcher.py:_on_file_created():275] file/dir created: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/media/images/Image plot_5_95d5558996cd84d1ad52.png
+2023-01-05 11:57:31,261 DEBUG   SenderThread:8363 [sender.py:send():303] send: files
+2023-01-05 11:57:31,263 INFO    SenderThread:8363 [sender.py:_save_file():1171] saving file media/images/Image plot_5_eba12bdc501074d59c51.png with policy now
+2023-01-05 11:57:31,286 INFO    Thread-43 :8363 [upload_job.py:push():143] Uploaded file /tmp/tmpq4bnzh21wandb/tuvu8fjn-media/images/Image plot_5_18653ac37296fa650634.png
+2023-01-05 11:57:31,300 INFO    Thread-13 :8363 [dir_watcher.py:_on_file_created():275] file/dir created: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/media/images/Image plot_5_7c1fa883b496ffacae72.png
+2023-01-05 11:57:31,310 INFO    Thread-44 :8363 [upload_job.py:push():143] Uploaded file /tmp/tmpq4bnzh21wandb/22hboo3u-media/images/Image plot_5_26bdfb4f9aa337254eda.png
+2023-01-05 11:57:31,313 DEBUG   SenderThread:8363 [sender.py:send():303] send: files
+2023-01-05 11:57:31,316 INFO    SenderThread:8363 [sender.py:_save_file():1171] saving file media/images/Image plot_5_b046adfb68fe8ced089f.png with policy now
+2023-01-05 11:57:31,343 INFO    Thread-13 :8363 [dir_watcher.py:_on_file_created():275] file/dir created: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/media/images/Image plot_5_6886697fd5f83f4c356d.png
+2023-01-05 11:57:31,368 DEBUG   SenderThread:8363 [sender.py:send():303] send: files
+2023-01-05 11:57:31,373 INFO    SenderThread:8363 [sender.py:_save_file():1171] saving file media/images/Image plot_5_a60478015eefb505d478.png with policy now
+2023-01-05 11:57:31,377 INFO    Thread-13 :8363 [dir_watcher.py:_on_file_created():275] file/dir created: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/media/images/Image plot_5_45ec14f4ae9105da8e6d.png
+2023-01-05 11:57:31,407 INFO    Thread-45 :8363 [upload_job.py:push():143] Uploaded file /tmp/tmpq4bnzh21wandb/1w5yvpjb-media/images/Image plot_5_009e9f7e2b492dfe713e.png
+2023-01-05 11:57:31,414 DEBUG   SenderThread:8363 [sender.py:send():303] send: files
+2023-01-05 11:57:31,416 INFO    Thread-13 :8363 [dir_watcher.py:_on_file_created():275] file/dir created: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/media/images/Image plot_5_5d754a74f926e6bd3dab.png
+2023-01-05 11:57:31,416 INFO    SenderThread:8363 [sender.py:_save_file():1171] saving file media/images/Image plot_5_1e30e0983a50691102b9.png with policy now
+2023-01-05 11:57:31,445 INFO    Thread-13 :8363 [dir_watcher.py:_on_file_created():275] file/dir created: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/media/images/Image plot_5_3dc2614179b196ee4703.png
+2023-01-05 11:57:31,463 DEBUG   SenderThread:8363 [sender.py:send():303] send: files
+2023-01-05 11:57:31,464 INFO    SenderThread:8363 [sender.py:_save_file():1171] saving file media/images/Image plot_5_3d6e3de3c30496fc2b90.png with policy now
+2023-01-05 11:57:31,469 INFO    Thread-46 :8363 [upload_job.py:push():143] Uploaded file /tmp/tmpq4bnzh21wandb/3w48skwp-media/images/Image plot_5_31e174f627729721da80.png
+2023-01-05 11:57:31,486 INFO    Thread-13 :8363 [dir_watcher.py:_on_file_created():275] file/dir created: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/media/images/Image plot_5_aa74b770cbe648f39080.png
+2023-01-05 11:57:31,509 DEBUG   SenderThread:8363 [sender.py:send():303] send: files
+2023-01-05 11:57:31,510 INFO    SenderThread:8363 [sender.py:_save_file():1171] saving file media/images/Image plot_5_6d592ce9331bb0a734e7.png with policy now
+2023-01-05 11:57:31,516 INFO    Thread-13 :8363 [dir_watcher.py:_on_file_created():275] file/dir created: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/media/images/Image plot_5_8e384070e1544730e8c4.png
+2023-01-05 11:57:31,550 INFO    Thread-13 :8363 [dir_watcher.py:_on_file_created():275] file/dir created: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/media/images/Image plot_5_a21c5077494143505cb8.png
+2023-01-05 11:57:31,552 DEBUG   SenderThread:8363 [sender.py:send():303] send: files
+2023-01-05 11:57:31,554 INFO    SenderThread:8363 [sender.py:_save_file():1171] saving file media/images/Image plot_5_3a7fd10624c0368b4bad.png with policy now
+2023-01-05 11:57:31,585 INFO    Thread-47 :8363 [upload_job.py:push():143] Uploaded file /tmp/tmpq4bnzh21wandb/2xc5pwtq-media/images/Image plot_5_07a860f2a6ee96a2cf05.png
+2023-01-05 11:57:31,587 INFO    Thread-48 :8363 [upload_job.py:push():143] Uploaded file /tmp/tmpq4bnzh21wandb/1q8lvzx4-media/images/Image plot_5_987e213e464058d2c7bf.png
+2023-01-05 11:57:31,594 INFO    Thread-13 :8363 [dir_watcher.py:_on_file_created():275] file/dir created: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/media/images/Image plot_5_0d65537067c51e6a194f.png
+2023-01-05 11:57:31,601 DEBUG   SenderThread:8363 [sender.py:send():303] send: files
+2023-01-05 11:57:31,605 INFO    SenderThread:8363 [sender.py:_save_file():1171] saving file media/images/Image plot_5_94189849cfa110d51e4b.png with policy now
+2023-01-05 11:57:31,645 INFO    Thread-13 :8363 [dir_watcher.py:_on_file_created():275] file/dir created: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/media/images/Image plot_5_c64d6454c6d2f8670fd9.png
+2023-01-05 11:57:31,661 DEBUG   SenderThread:8363 [sender.py:send():303] send: files
+2023-01-05 11:57:31,663 INFO    SenderThread:8363 [sender.py:_save_file():1171] saving file media/images/Image plot_5_0573b91ddd98110eedad.png with policy now
+2023-01-05 11:57:31,668 INFO    Thread-49 :8363 [upload_job.py:push():143] Uploaded file /tmp/tmpq4bnzh21wandb/1tf1jhzy-media/images/Image plot_5_80f9a26306c13d205b80.png
+2023-01-05 11:57:31,689 INFO    Thread-13 :8363 [dir_watcher.py:_on_file_created():275] file/dir created: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/media/images/Image plot_5_a008bcf7dc183f0de3b4.png
+2023-01-05 11:57:31,702 INFO    Thread-50 :8363 [upload_job.py:push():143] Uploaded file /tmp/tmpq4bnzh21wandb/59tmsii8-media/images/Image plot_5_a6929db96822b7de6f82.png
+2023-01-05 11:57:31,711 DEBUG   SenderThread:8363 [sender.py:send():303] send: files
+2023-01-05 11:57:31,713 INFO    SenderThread:8363 [sender.py:_save_file():1171] saving file media/images/Image plot_5_a62a45435a6dd4df1bad.png with policy now
+2023-01-05 11:57:31,726 INFO    Thread-13 :8363 [dir_watcher.py:_on_file_created():275] file/dir created: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/media/images/Image plot_5_26bdfb4f9aa337254eda.png
+2023-01-05 11:57:31,763 DEBUG   SenderThread:8363 [sender.py:send():303] send: files
+2023-01-05 11:57:31,765 INFO    SenderThread:8363 [sender.py:_save_file():1171] saving file media/images/Image plot_5_5eb2f1d7ade3a17b061f.png with policy now
+2023-01-05 11:57:31,768 INFO    Thread-13 :8363 [dir_watcher.py:_on_file_created():275] file/dir created: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/media/images/Image plot_5_221dce3b844b0450e21c.png
+2023-01-05 11:57:31,810 INFO    Thread-13 :8363 [dir_watcher.py:_on_file_created():275] file/dir created: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/media/images/Image plot_5_3688b645792a20f16b50.png
+2023-01-05 11:57:31,813 DEBUG   SenderThread:8363 [sender.py:send():303] send: files
+2023-01-05 11:57:31,815 INFO    SenderThread:8363 [sender.py:_save_file():1171] saving file media/images/Image plot_5_1ef3aee21a5165e55c0b.png with policy now
+2023-01-05 11:57:31,847 INFO    Thread-13 :8363 [dir_watcher.py:_on_file_created():275] file/dir created: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/media/images/Image plot_5_700c38d46a6dbe9c33e5.png
+2023-01-05 11:57:31,855 INFO    Thread-52 :8363 [upload_job.py:push():143] Uploaded file /tmp/tmpq4bnzh21wandb/346wnuuc-media/images/Image plot_5_bd83d44a6ee1011b1fd4.png
+2023-01-05 11:57:31,874 DEBUG   SenderThread:8363 [sender.py:send():303] send: files
+2023-01-05 11:57:31,876 INFO    SenderThread:8363 [sender.py:_save_file():1171] saving file media/images/Image plot_5_731c47b53ced70a46005.png with policy now
+2023-01-05 11:57:31,885 INFO    Thread-53 :8363 [upload_job.py:push():143] Uploaded file /tmp/tmpq4bnzh21wandb/1l1rfj3e-media/images/Image plot_5_6886697fd5f83f4c356d.png
+2023-01-05 11:57:31,887 INFO    Thread-13 :8363 [dir_watcher.py:_on_file_created():275] file/dir created: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/media/images/Image plot_5_30bf50095f3c424ecbf9.png
+2023-01-05 11:57:31,932 INFO    Thread-13 :8363 [dir_watcher.py:_on_file_created():275] file/dir created: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/media/images/Image plot_5_53cf690478fd772d81b5.png
+2023-01-05 11:57:31,936 DEBUG   SenderThread:8363 [sender.py:send():303] send: files
+2023-01-05 11:57:31,939 INFO    SenderThread:8363 [sender.py:_save_file():1171] saving file media/images/Image plot_5_6f16a4ce1856565c7252.png with policy now
+2023-01-05 11:57:31,954 INFO    Thread-54 :8363 [upload_job.py:push():143] Uploaded file /tmp/tmpq4bnzh21wandb/1461zydw-media/images/Image plot_5_9863ed6dda308fe38671.png
+2023-01-05 11:57:31,959 INFO    Thread-55 :8363 [upload_job.py:push():143] Uploaded file /tmp/tmpq4bnzh21wandb/3ahhnmq7-media/images/Image plot_5_bd7ca669048182124cbe.png
+2023-01-05 11:57:31,989 INFO    Thread-13 :8363 [dir_watcher.py:_on_file_created():275] file/dir created: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/media/images/Image plot_5_b4771470bae6067687f8.png
+2023-01-05 11:57:32,018 DEBUG   SenderThread:8363 [sender.py:send():303] send: files
+2023-01-05 11:57:32,022 INFO    SenderThread:8363 [sender.py:_save_file():1171] saving file media/images/Image plot_5_039b1c279c8ddb473c51.png with policy now
+2023-01-05 11:57:32,041 INFO    Thread-13 :8363 [dir_watcher.py:_on_file_created():275] file/dir created: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/media/images/Image plot_5_987e213e464058d2c7bf.png
+2023-01-05 11:57:32,060 DEBUG   SenderThread:8363 [sender.py:send():303] send: files
+2023-01-05 11:57:32,063 INFO    SenderThread:8363 [sender.py:_save_file():1171] saving file media/images/Image plot_5_1e16d037c0ac108b1304.png with policy now
+2023-01-05 11:57:32,075 INFO    Thread-56 :8363 [upload_job.py:push():143] Uploaded file /tmp/tmpq4bnzh21wandb/2fyjwcu8-media/images/Image plot_5_f78b5e082139199a15f8.png
+2023-01-05 11:57:32,084 INFO    Thread-13 :8363 [dir_watcher.py:_on_file_created():275] file/dir created: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/media/images/Image plot_5_bd7ca669048182124cbe.png
+2023-01-05 11:57:32,095 DEBUG   SenderThread:8363 [sender.py:send():303] send: files
+2023-01-05 11:57:32,098 INFO    SenderThread:8363 [sender.py:_save_file():1171] saving file media/images/Image plot_5_acc19dca89652b87568c.png with policy now
+2023-01-05 11:57:32,104 INFO    Thread-57 :8363 [upload_job.py:push():143] Uploaded file /tmp/tmpq4bnzh21wandb/2o1b3wd9-media/images/Image plot_5_5d754a74f926e6bd3dab.png
+2023-01-05 11:57:32,132 INFO    Thread-13 :8363 [dir_watcher.py:_on_file_created():275] file/dir created: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/media/images/Image plot_5_31e174f627729721da80.png
+2023-01-05 11:57:32,147 DEBUG   SenderThread:8363 [sender.py:send():303] send: files
+2023-01-05 11:57:32,149 INFO    SenderThread:8363 [sender.py:_save_file():1171] saving file media/images/Image plot_5_fc42ba25f4e831d30258.png with policy now
+2023-01-05 11:57:32,185 INFO    Thread-13 :8363 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/media/images
+2023-01-05 11:57:32,198 DEBUG   SenderThread:8363 [sender.py:send():303] send: files
+2023-01-05 11:57:32,199 INFO    SenderThread:8363 [sender.py:_save_file():1171] saving file media/images/Image plot_5_32b3ecb3e7939d5f27e6.png with policy now
+2023-01-05 11:57:32,226 INFO    Thread-58 :8363 [upload_job.py:push():143] Uploaded file /tmp/tmpq4bnzh21wandb/7ftdrij1-media/images/Image plot_5_18f390eb79f344f0a7c8.png
+2023-01-05 11:57:32,248 INFO    Thread-59 :8363 [upload_job.py:push():143] Uploaded file /tmp/tmpq4bnzh21wandb/20vpcbbw-media/images/Image plot_5_a008bcf7dc183f0de3b4.png
+2023-01-05 11:57:32,253 DEBUG   SenderThread:8363 [sender.py:send():303] send: files
+2023-01-05 11:57:32,258 INFO    SenderThread:8363 [sender.py:_save_file():1171] saving file media/images/Image plot_5_c18e24051c201f28aec8.png with policy now
+2023-01-05 11:57:32,305 DEBUG   SenderThread:8363 [sender.py:send():303] send: files
+2023-01-05 11:57:32,308 INFO    SenderThread:8363 [sender.py:_save_file():1171] saving file media/images/Image plot_5_ae433a942c743b2d4d8b.png with policy now
+2023-01-05 11:57:32,376 INFO    Thread-60 :8363 [upload_job.py:push():143] Uploaded file /tmp/tmpq4bnzh21wandb/2o7txfim-media/images/Image plot_5_b901db677b6489ade381.png
+2023-01-05 11:57:32,377 DEBUG   SenderThread:8363 [sender.py:send():303] send: files
+2023-01-05 11:57:32,402 INFO    Thread-61 :8363 [upload_job.py:push():143] Uploaded file /tmp/tmpq4bnzh21wandb/6bjt1p7u-media/images/Image plot_5_30bf50095f3c424ecbf9.png
+2023-01-05 11:57:32,443 INFO    SenderThread:8363 [sender.py:_save_file():1171] saving file media/images/Image plot_5_7cab522dab08afbf7ed3.png with policy now
+2023-01-05 11:57:32,491 INFO    Thread-62 :8363 [upload_job.py:push():143] Uploaded file /tmp/tmpq4bnzh21wandb/qlqb5i6l-media/images/Image plot_5_28b855be952b345c8db5.png
+2023-01-05 11:57:32,527 INFO    Thread-63 :8363 [upload_job.py:push():143] Uploaded file /tmp/tmpq4bnzh21wandb/2pz0zibm-media/images/Image plot_5_b4771470bae6067687f8.png
+2023-01-05 11:57:32,580 INFO    Thread-64 :8363 [upload_job.py:push():143] Uploaded file /tmp/tmpq4bnzh21wandb/tr2nik75-media/images/Image plot_5_e050176ec405e615f469.png
+2023-01-05 11:57:32,582 DEBUG   SenderThread:8363 [sender.py:send():303] send: files
+2023-01-05 11:57:32,591 INFO    SenderThread:8363 [sender.py:_save_file():1171] saving file media/images/Image plot_5_939ba1b1b1009ad8de9a.png with policy now
+2023-01-05 11:57:32,624 INFO    Thread-65 :8363 [upload_job.py:push():143] Uploaded file /tmp/tmpq4bnzh21wandb/1q7imbd5-media/images/Image plot_5_3688b645792a20f16b50.png
+2023-01-05 11:57:32,643 DEBUG   SenderThread:8363 [sender.py:send():303] send: files
+2023-01-05 11:57:32,648 INFO    SenderThread:8363 [sender.py:_save_file():1171] saving file media/images/Image plot_5_0fe09d42c5ae20eeff82.png with policy now
+2023-01-05 11:57:32,712 INFO    Thread-66 :8363 [upload_job.py:push():143] Uploaded file /tmp/tmpq4bnzh21wandb/3w329wn7-media/images/Image plot_5_1bcd393ea658cc8d5f38.png
+2023-01-05 11:57:32,724 DEBUG   SenderThread:8363 [sender.py:send():303] send: files
+2023-01-05 11:57:32,726 INFO    SenderThread:8363 [sender.py:_save_file():1171] saving file media/images/Image plot_5_62e4011c8c064271d8dd.png with policy now
+2023-01-05 11:57:32,806 INFO    Thread-67 :8363 [upload_job.py:push():143] Uploaded file /tmp/tmpq4bnzh21wandb/3l1v8jzn-media/images/Image plot_5_53cf690478fd772d81b5.png
+2023-01-05 11:57:32,808 DEBUG   SenderThread:8363 [sender.py:send():303] send: files
+2023-01-05 11:57:32,812 INFO    SenderThread:8363 [sender.py:_save_file():1171] saving file media/images/Image plot_5_234c0a95b3b4bec06246.png with policy now
+2023-01-05 11:57:32,874 INFO    Thread-51 :8363 [upload_job.py:push():143] Uploaded file /tmp/tmpq4bnzh21wandb/15whhjn3-media/images/Image plot_5_449810b2c364ceb2b85b.png
+2023-01-05 11:57:32,885 DEBUG   SenderThread:8363 [sender.py:send():303] send: files
+2023-01-05 11:57:32,890 INFO    Thread-68 :8363 [upload_job.py:push():143] Uploaded file /tmp/tmpq4bnzh21wandb/1sa0usqr-media/images/Image plot_5_45ec14f4ae9105da8e6d.png
+2023-01-05 11:57:32,891 INFO    SenderThread:8363 [sender.py:_save_file():1171] saving file media/images/Image plot_5_b7d80aae1789d1913e7b.png with policy now
+2023-01-05 11:57:32,956 DEBUG   SenderThread:8363 [sender.py:send():303] send: files
+2023-01-05 11:57:32,958 INFO    SenderThread:8363 [sender.py:_save_file():1171] saving file media/images/Image plot_5_1ba20d2b57b25df2152f.png with policy now
+2023-01-05 11:57:32,971 INFO    Thread-69 :8363 [upload_job.py:push():143] Uploaded file /tmp/tmpq4bnzh21wandb/14y5fq02-media/images/Image plot_5_8e384070e1544730e8c4.png
+2023-01-05 11:57:32,981 INFO    Thread-70 :8363 [upload_job.py:push():143] Uploaded file /tmp/tmpq4bnzh21wandb/35nc89ma-media/images/Image plot_5_221dce3b844b0450e21c.png
+2023-01-05 11:57:33,027 DEBUG   SenderThread:8363 [sender.py:send():303] send: files
+2023-01-05 11:57:33,028 INFO    SenderThread:8363 [sender.py:_save_file():1171] saving file media/images/Image plot_5_fc0b6187001089323ded.png with policy now
+2023-01-05 11:57:33,087 DEBUG   SenderThread:8363 [sender.py:send():303] send: files
+2023-01-05 11:57:33,089 INFO    SenderThread:8363 [sender.py:_save_file():1171] saving file media/images/Image plot_5_857a20c8b8030c5aa7cb.png with policy now
+2023-01-05 11:57:33,131 DEBUG   SenderThread:8363 [sender.py:send():303] send: files
+2023-01-05 11:57:33,133 INFO    SenderThread:8363 [sender.py:_save_file():1171] saving file media/images/Image plot_5_bf3d43d0340112fcaed4.png with policy now
+2023-01-05 11:57:33,167 INFO    Thread-13 :8363 [dir_watcher.py:_on_file_created():275] file/dir created: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/media/images/Image plot_5_a60478015eefb505d478.png
+2023-01-05 11:57:33,180 DEBUG   SenderThread:8363 [sender.py:send():303] send: files
+2023-01-05 11:57:33,184 INFO    SenderThread:8363 [sender.py:_save_file():1171] saving file media/images/Image plot_5_f6af4bbdf36ecf9e93e8.png with policy now
+2023-01-05 11:57:33,222 INFO    Thread-13 :8363 [dir_watcher.py:_on_file_created():275] file/dir created: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/media/images/Image plot_5_df7c6c614d89d2c95caf.png
+2023-01-05 11:57:33,238 INFO    Thread-71 :8363 [upload_job.py:push():143] Uploaded file /tmp/tmpq4bnzh21wandb/a1cflgst-media/images/Image plot_5_7c1fa883b496ffacae72.png
+2023-01-05 11:57:33,238 DEBUG   SenderThread:8363 [sender.py:send():303] send: files
+2023-01-05 11:57:33,252 INFO    SenderThread:8363 [sender.py:_save_file():1171] saving file media/images/Image plot_5_44db27223bf76b0d7375.png with policy now
+2023-01-05 11:57:33,279 INFO    Thread-13 :8363 [dir_watcher.py:_on_file_created():275] file/dir created: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/media/images/Image plot_5_3d6e3de3c30496fc2b90.png
+2023-01-05 11:57:33,293 INFO    Thread-72 :8363 [upload_job.py:push():143] Uploaded file /tmp/tmpq4bnzh21wandb/1lgat7cr-media/images/Image plot_5_700c38d46a6dbe9c33e5.png
+2023-01-05 11:57:33,303 DEBUG   SenderThread:8363 [sender.py:send():303] send: files
+2023-01-05 11:57:33,304 INFO    SenderThread:8363 [sender.py:_save_file():1171] saving file media/images/Image plot_5_8c9185355ecd533dcfb1.png with policy now
+2023-01-05 11:57:33,320 INFO    Thread-13 :8363 [dir_watcher.py:_on_file_created():275] file/dir created: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/media/images/Image plot_5_6f16a4ce1856565c7252.png
+2023-01-05 11:57:33,353 DEBUG   SenderThread:8363 [sender.py:send():303] send: files
+2023-01-05 11:57:33,355 INFO    SenderThread:8363 [sender.py:_save_file():1171] saving file media/images/Image plot_5_2e09d1f88f8009acd0cd.png with policy now
+2023-01-05 11:57:33,357 INFO    Thread-13 :8363 [dir_watcher.py:_on_file_created():275] file/dir created: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/media/images/Image plot_5_fc42ba25f4e831d30258.png
+2023-01-05 11:57:33,382 INFO    Thread-73 :8363 [upload_job.py:push():143] Uploaded file /tmp/tmpq4bnzh21wandb/1tbfnv89-media/images/Image plot_5_0d65537067c51e6a194f.png
+2023-01-05 11:57:33,414 DEBUG   SenderThread:8363 [sender.py:send():303] send: files
+2023-01-05 11:57:33,417 INFO    SenderThread:8363 [sender.py:_save_file():1171] saving file media/images/Image plot_5_87914872c44e4c5bbb59.png with policy now
+2023-01-05 11:57:33,425 INFO    Thread-13 :8363 [dir_watcher.py:_on_file_created():275] file/dir created: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/media/images/Image plot_5_6d592ce9331bb0a734e7.png
+2023-01-05 11:57:33,463 DEBUG   SenderThread:8363 [sender.py:send():303] send: files
+2023-01-05 11:57:33,477 INFO    SenderThread:8363 [sender.py:_save_file():1171] saving file media/images/Image plot_5_68f2b97bd17500213be6.png with policy now
+2023-01-05 11:57:33,478 INFO    Thread-13 :8363 [dir_watcher.py:_on_file_created():275] file/dir created: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/media/images/Image plot_5_eba12bdc501074d59c51.png
+2023-01-05 11:57:33,517 DEBUG   SenderThread:8363 [sender.py:send():303] send: files
+2023-01-05 11:57:33,521 INFO    SenderThread:8363 [sender.py:_save_file():1171] saving file media/images/Image plot_5_ae7d245a750f5b5759d3.png with policy now
+2023-01-05 11:57:33,533 INFO    Thread-13 :8363 [dir_watcher.py:_on_file_created():275] file/dir created: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/media/images/Image plot_5_94189849cfa110d51e4b.png
+2023-01-05 11:57:33,574 DEBUG   SenderThread:8363 [sender.py:send():303] send: files
+2023-01-05 11:57:33,578 INFO    Thread-13 :8363 [dir_watcher.py:_on_file_created():275] file/dir created: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/media/images/Image plot_5_a62a45435a6dd4df1bad.png
+2023-01-05 11:57:33,579 INFO    SenderThread:8363 [sender.py:_save_file():1171] saving file media/images/Image plot_5_138bfd27d23efc7606cb.png with policy now
+2023-01-05 11:57:33,586 INFO    Thread-74 :8363 [upload_job.py:push():143] Uploaded file /tmp/tmpq4bnzh21wandb/2kfp02sz-media/images/Image plot_5_95d5558996cd84d1ad52.png
+2023-01-05 11:57:33,620 INFO    Thread-13 :8363 [dir_watcher.py:_on_file_created():275] file/dir created: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/media/images/Image plot_5_039b1c279c8ddb473c51.png
+2023-01-05 11:57:33,631 DEBUG   SenderThread:8363 [sender.py:send():303] send: files
+2023-01-05 11:57:33,644 INFO    SenderThread:8363 [sender.py:_save_file():1171] saving file media/images/Image plot_5_d58382946f0b583f2749.png with policy now
+2023-01-05 11:57:33,664 INFO    Thread-75 :8363 [upload_job.py:push():143] Uploaded file /tmp/tmpq4bnzh21wandb/2d0knmfh-media/images/Image plot_5_88841dfdd54ba28b6744.png
+2023-01-05 11:57:33,700 INFO    Thread-13 :8363 [dir_watcher.py:_on_file_created():275] file/dir created: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/media/images/Image plot_5_b046adfb68fe8ced089f.png
+2023-01-05 11:57:33,714 INFO    Thread-76 :8363 [upload_job.py:push():143] Uploaded file /tmp/tmpq4bnzh21wandb/1l0w95eu-media/images/Image plot_5_04fb222b1bbf84d8b210.png
+2023-01-05 11:57:33,716 DEBUG   SenderThread:8363 [sender.py:send():303] send: files
+2023-01-05 11:57:33,738 INFO    SenderThread:8363 [sender.py:_save_file():1171] saving file media/images/Image plot_5_0c0e9ed47b848d8cca5d.png with policy now
+2023-01-05 11:57:33,760 INFO    Thread-13 :8363 [dir_watcher.py:_on_file_created():275] file/dir created: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/media/images/Image plot_5_731c47b53ced70a46005.png
+2023-01-05 11:57:33,798 INFO    Thread-13 :8363 [dir_watcher.py:_on_file_created():275] file/dir created: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/media/images/Image plot_5_1e16d037c0ac108b1304.png
+2023-01-05 11:57:33,805 DEBUG   SenderThread:8363 [sender.py:send():303] send: files
+2023-01-05 11:57:33,809 INFO    SenderThread:8363 [sender.py:_save_file():1171] saving file media/images/Image plot_5_35f5ef4c0c942145b8ef.png with policy now
+2023-01-05 11:57:33,836 INFO    Thread-77 :8363 [upload_job.py:push():143] Uploaded file /tmp/tmpq4bnzh21wandb/1dbdxc59-media/images/Image plot_5_df7c6c614d89d2c95caf.png
+2023-01-05 11:57:33,843 INFO    Thread-13 :8363 [dir_watcher.py:_on_file_created():275] file/dir created: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/media/images/Image plot_5_14245b091ce1f01b5a7e.png
+2023-01-05 11:57:33,848 DEBUG   SenderThread:8363 [sender.py:send():303] send: files
+2023-01-05 11:57:33,850 INFO    SenderThread:8363 [sender.py:_save_file():1171] saving file media/images/Image plot_5_b72a350e6b0df50861aa.png with policy now
+2023-01-05 11:57:33,856 INFO    Thread-78 :8363 [upload_job.py:push():143] Uploaded file /tmp/tmpq4bnzh21wandb/3qlnre37-media/images/Image plot_5_14245b091ce1f01b5a7e.png
+2023-01-05 11:57:33,892 INFO    Thread-13 :8363 [dir_watcher.py:_on_file_created():275] file/dir created: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/media/images/Image plot_5_25b8622bc30c7302be22.png
+2023-01-05 11:57:33,912 DEBUG   SenderThread:8363 [sender.py:send():303] send: files
+2023-01-05 11:57:33,914 INFO    SenderThread:8363 [sender.py:_save_file():1171] saving file media/images/Image plot_5_0eff4d2fc581dbd4edfa.png with policy now
+2023-01-05 11:57:33,938 INFO    Thread-13 :8363 [dir_watcher.py:_on_file_created():275] file/dir created: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/media/images/Image plot_5_5eb2f1d7ade3a17b061f.png
+2023-01-05 11:57:33,943 INFO    Thread-79 :8363 [upload_job.py:push():143] Uploaded file /tmp/tmpq4bnzh21wandb/1f64vvn0-media/images/Image plot_5_c91c8be862d77a242713.png
+2023-01-05 11:57:33,962 DEBUG   SenderThread:8363 [sender.py:send():303] send: files
+2023-01-05 11:57:33,963 INFO    SenderThread:8363 [sender.py:_save_file():1171] saving file media/images/Image plot_5_c3cd170eb6b57f91e727.png with policy now
+2023-01-05 11:57:33,994 INFO    Thread-13 :8363 [dir_watcher.py:_on_file_created():275] file/dir created: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/media/images/Image plot_5_04fb222b1bbf84d8b210.png
+2023-01-05 11:57:34,001 DEBUG   SenderThread:8363 [sender.py:send():303] send: files
+2023-01-05 11:57:34,003 INFO    SenderThread:8363 [sender.py:_save_file():1171] saving file media/images/Image plot_5_2682fb9da367146a47fd.png with policy now
+2023-01-05 11:57:34,005 INFO    Thread-80 :8363 [upload_job.py:push():143] Uploaded file /tmp/tmpq4bnzh21wandb/23xxnl5f-media/images/Image plot_5_b474ea930f3b2f5d0d1f.png
+2023-01-05 11:57:34,036 INFO    Thread-13 :8363 [dir_watcher.py:_on_file_created():275] file/dir created: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/media/images/Image plot_5_acc19dca89652b87568c.png
+2023-01-05 11:57:34,060 DEBUG   SenderThread:8363 [sender.py:send():303] send: files
+2023-01-05 11:57:34,062 INFO    SenderThread:8363 [sender.py:_save_file():1171] saving file media/images/Image plot_5_96325c64a6df3a006717.png with policy now
+2023-01-05 11:57:34,071 INFO    Thread-81 :8363 [upload_job.py:push():143] Uploaded file /tmp/tmpq4bnzh21wandb/8126e7e9-media/images/Image plot_5_f5ac652fba4cfe8fda1a.png
+2023-01-05 11:57:34,087 INFO    Thread-13 :8363 [dir_watcher.py:_on_file_created():275] file/dir created: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/media/images/Image plot_5_ae433a942c743b2d4d8b.png
+2023-01-05 11:57:34,110 DEBUG   SenderThread:8363 [sender.py:send():303] send: files
+2023-01-05 11:57:34,112 INFO    SenderThread:8363 [sender.py:_save_file():1171] saving file media/images/Image plot_5_90d4638819f57678d1dc.png with policy now
+2023-01-05 11:57:34,131 INFO    Thread-13 :8363 [dir_watcher.py:_on_file_created():275] file/dir created: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/media/images/Image plot_5_3a7fd10624c0368b4bad.png
+2023-01-05 11:57:34,148 INFO    Thread-82 :8363 [upload_job.py:push():143] Uploaded file /tmp/tmpq4bnzh21wandb/23cfjnfi-media/images/Image plot_5_25b8622bc30c7302be22.png
+2023-01-05 11:57:34,149 DEBUG   SenderThread:8363 [sender.py:send():303] send: files
+2023-01-05 11:57:34,152 INFO    SenderThread:8363 [sender.py:_save_file():1171] saving file media/images/Image plot_5_a373ddb446774d0128eb.png with policy now
+2023-01-05 11:57:34,174 INFO    Thread-13 :8363 [dir_watcher.py:_on_file_created():275] file/dir created: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/media/images/Image plot_5_0573b91ddd98110eedad.png
+2023-01-05 11:57:34,198 DEBUG   SenderThread:8363 [sender.py:send():303] send: files
+2023-01-05 11:57:34,201 INFO    SenderThread:8363 [sender.py:_save_file():1171] saving file media/images/Image plot_5_4d9d5f416240376d20dd.png with policy now
+2023-01-05 11:57:34,208 INFO    Thread-13 :8363 [dir_watcher.py:_on_file_created():275] file/dir created: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/media/images/Image plot_5_c91c8be862d77a242713.png
+2023-01-05 11:57:34,247 DEBUG   SenderThread:8363 [sender.py:send():303] send: files
+2023-01-05 11:57:34,248 INFO    Thread-13 :8363 [dir_watcher.py:_on_file_created():275] file/dir created: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/media/images/Image plot_5_88841dfdd54ba28b6744.png
+2023-01-05 11:57:34,251 INFO    SenderThread:8363 [sender.py:_save_file():1171] saving file media/images/Image plot_5_07e2a1cf7377cf82337b.png with policy now
+2023-01-05 11:57:34,292 INFO    Thread-13 :8363 [dir_watcher.py:_on_file_created():275] file/dir created: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/media/images/Image plot_5_1e30e0983a50691102b9.png
+2023-01-05 11:57:34,297 INFO    Thread-83 :8363 [upload_job.py:push():143] Uploaded file /tmp/tmpq4bnzh21wandb/3fjvl1ig-media/images/Image plot_5_a6929db96822b7de6f82.png
+2023-01-05 11:57:34,300 INFO    Thread-84 :8363 [upload_job.py:push():143] Uploaded file /tmp/tmpq4bnzh21wandb/1t7m26k3-media/images/Image plot_5_95d5558996cd84d1ad52.png
+2023-01-05 11:57:34,303 DEBUG   SenderThread:8363 [sender.py:send():303] send: files
+2023-01-05 11:57:34,314 INFO    SenderThread:8363 [sender.py:_save_file():1171] saving file media/images/Image plot_5_92a03253525b7bc41747.png with policy now
+2023-01-05 11:57:34,340 INFO    Thread-13 :8363 [dir_watcher.py:_on_file_created():275] file/dir created: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/media/images/Image plot_5_b474ea930f3b2f5d0d1f.png
+2023-01-05 11:57:34,375 INFO    Thread-85 :8363 [upload_job.py:push():143] Uploaded file /tmp/tmpq4bnzh21wandb/1dcxws8w-media/images/Image plot_5_eba12bdc501074d59c51.png
+2023-01-05 11:57:34,376 INFO    Thread-13 :8363 [dir_watcher.py:_on_file_created():275] file/dir created: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/media/images/Image plot_5_1ef3aee21a5165e55c0b.png
+2023-01-05 11:57:34,431 INFO    Thread-13 :8363 [dir_watcher.py:_on_file_created():275] file/dir created: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/media/images/Image plot_5_c18e24051c201f28aec8.png
+2023-01-05 11:57:34,475 INFO    Thread-86 :8363 [upload_job.py:push():143] Uploaded file /tmp/tmpq4bnzh21wandb/2p8z05oc-media/images/Image plot_5_7c1fa883b496ffacae72.png
+2023-01-05 11:57:34,481 INFO    Thread-13 :8363 [dir_watcher.py:_on_file_created():275] file/dir created: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/media/images/Image plot_5_32b3ecb3e7939d5f27e6.png
+2023-01-05 11:57:34,491 INFO    Thread-87 :8363 [upload_job.py:push():143] Uploaded file /tmp/tmpq4bnzh21wandb/3g1a8irs-media/images/Image plot_5_b046adfb68fe8ced089f.png
+2023-01-05 11:57:34,558 INFO    Thread-13 :8363 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/media/images
+2023-01-05 11:57:34,619 INFO    Thread-88 :8363 [upload_job.py:push():143] Uploaded file /tmp/tmpq4bnzh21wandb/qcx3n09k-media/images/Image plot_5_6886697fd5f83f4c356d.png
+2023-01-05 11:57:34,647 INFO    Thread-89 :8363 [upload_job.py:push():143] Uploaded file /tmp/tmpq4bnzh21wandb/3vxhrh3r-media/images/Image plot_5_a60478015eefb505d478.png
+2023-01-05 11:57:34,788 INFO    Thread-90 :8363 [upload_job.py:push():143] Uploaded file /tmp/tmpq4bnzh21wandb/3qitobt8-media/images/Image plot_5_45ec14f4ae9105da8e6d.png
+2023-01-05 11:57:34,827 INFO    Thread-91 :8363 [upload_job.py:push():143] Uploaded file /tmp/tmpq4bnzh21wandb/1j1wvazz-media/images/Image plot_5_5d754a74f926e6bd3dab.png
+2023-01-05 11:57:34,881 INFO    Thread-92 :8363 [upload_job.py:push():143] Uploaded file /tmp/tmpq4bnzh21wandb/3afqc7qi-media/images/Image plot_5_1e30e0983a50691102b9.png
+2023-01-05 11:57:34,956 INFO    Thread-93 :8363 [upload_job.py:push():143] Uploaded file /tmp/tmpq4bnzh21wandb/y2zvmski-media/images/Image plot_5_3dc2614179b196ee4703.png
+2023-01-05 11:57:35,003 INFO    Thread-94 :8363 [upload_job.py:push():143] Uploaded file /tmp/tmpq4bnzh21wandb/1iat8myu-media/images/Image plot_5_3d6e3de3c30496fc2b90.png
+2023-01-05 11:57:35,162 INFO    Thread-95 :8363 [upload_job.py:push():143] Uploaded file /tmp/tmpq4bnzh21wandb/25vzxj4q-media/images/Image plot_5_aa74b770cbe648f39080.png
+2023-01-05 11:57:35,188 INFO    Thread-96 :8363 [upload_job.py:push():143] Uploaded file /tmp/tmpq4bnzh21wandb/1oy01sm0-media/images/Image plot_5_6d592ce9331bb0a734e7.png
+2023-01-05 11:57:35,263 INFO    Thread-13 :8363 [dir_watcher.py:_on_file_created():275] file/dir created: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/media/images/Image plot_5_f6af4bbdf36ecf9e93e8.png
+2023-01-05 11:57:35,273 INFO    Thread-97 :8363 [upload_job.py:push():143] Uploaded file /tmp/tmpq4bnzh21wandb/26u5czyz-media/images/Image plot_5_8e384070e1544730e8c4.png
+2023-01-05 11:57:35,297 INFO    Thread-13 :8363 [dir_watcher.py:_on_file_created():275] file/dir created: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/media/images/Image plot_5_fc0b6187001089323ded.png
+2023-01-05 11:57:35,319 INFO    Thread-98 :8363 [upload_job.py:push():143] Uploaded file /tmp/tmpq4bnzh21wandb/2gon3d00-media/images/Image plot_5_a21c5077494143505cb8.png
+2023-01-05 11:57:35,336 INFO    Thread-13 :8363 [dir_watcher.py:_on_file_created():275] file/dir created: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/media/images/Image plot_5_4d9d5f416240376d20dd.png
+2023-01-05 11:57:35,372 INFO    Thread-13 :8363 [dir_watcher.py:_on_file_created():275] file/dir created: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/media/images/Image plot_5_90d4638819f57678d1dc.png
+2023-01-05 11:57:35,405 INFO    Thread-13 :8363 [dir_watcher.py:_on_file_created():275] file/dir created: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/media/images/Image plot_5_b72a350e6b0df50861aa.png
+2023-01-05 11:57:35,438 INFO    Thread-13 :8363 [dir_watcher.py:_on_file_created():275] file/dir created: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/media/images/Image plot_5_0c0e9ed47b848d8cca5d.png
+2023-01-05 11:57:35,472 INFO    Thread-99 :8363 [upload_job.py:push():143] Uploaded file /tmp/tmpq4bnzh21wandb/2cqnuval-media/images/Image plot_5_3a7fd10624c0368b4bad.png
+2023-01-05 11:57:35,473 INFO    Thread-13 :8363 [dir_watcher.py:_on_file_created():275] file/dir created: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/media/images/Image plot_5_857a20c8b8030c5aa7cb.png
+2023-01-05 11:57:35,503 INFO    Thread-13 :8363 [dir_watcher.py:_on_file_created():275] file/dir created: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/media/images/Image plot_5_8c9185355ecd533dcfb1.png
+2023-01-05 11:57:35,531 INFO    Thread-13 :8363 [dir_watcher.py:_on_file_created():275] file/dir created: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/media/images/Image plot_5_1ba20d2b57b25df2152f.png
+2023-01-05 11:57:35,564 INFO    Thread-13 :8363 [dir_watcher.py:_on_file_created():275] file/dir created: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/media/images/Image plot_5_ae7d245a750f5b5759d3.png
+2023-01-05 11:57:35,599 INFO    Thread-13 :8363 [dir_watcher.py:_on_file_created():275] file/dir created: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/media/images/Image plot_5_c3cd170eb6b57f91e727.png
+2023-01-05 11:57:35,625 INFO    Thread-13 :8363 [dir_watcher.py:_on_file_created():275] file/dir created: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/media/images/Image plot_5_96325c64a6df3a006717.png
+2023-01-05 11:57:35,650 INFO    Thread-13 :8363 [dir_watcher.py:_on_file_created():275] file/dir created: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/media/images/Image plot_5_7cab522dab08afbf7ed3.png
+2023-01-05 11:57:35,681 INFO    Thread-13 :8363 [dir_watcher.py:_on_file_created():275] file/dir created: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/media/images/Image plot_5_bf3d43d0340112fcaed4.png
+2023-01-05 11:57:35,719 INFO    Thread-13 :8363 [dir_watcher.py:_on_file_created():275] file/dir created: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/media/images/Image plot_5_138bfd27d23efc7606cb.png
+2023-01-05 11:57:35,740 INFO    Thread-102:8363 [upload_job.py:push():143] Uploaded file /tmp/tmpq4bnzh21wandb/28o0ahvf-media/images/Image plot_5_c64d6454c6d2f8670fd9.png
+2023-01-05 11:57:35,745 INFO    Thread-103:8363 [upload_job.py:push():143] Uploaded file /tmp/tmpq4bnzh21wandb/1g8mswf0-media/images/Image plot_5_0573b91ddd98110eedad.png
+2023-01-05 11:57:35,753 INFO    Thread-13 :8363 [dir_watcher.py:_on_file_created():275] file/dir created: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/media/images/Image plot_5_0fe09d42c5ae20eeff82.png
+2023-01-05 11:57:35,809 INFO    Thread-100:8363 [upload_job.py:push():143] Uploaded file /tmp/tmpq4bnzh21wandb/1pzlvpdb-media/images/Image plot_5_0d65537067c51e6a194f.png
+2023-01-05 11:57:35,815 INFO    Thread-13 :8363 [dir_watcher.py:_on_file_created():275] file/dir created: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/media/images/Image plot_5_07e2a1cf7377cf82337b.png
+2023-01-05 11:57:35,838 INFO    Thread-104:8363 [upload_job.py:push():143] Uploaded file /tmp/tmpq4bnzh21wandb/3avqkzoc-media/images/Image plot_5_a008bcf7dc183f0de3b4.png
+2023-01-05 11:57:35,851 INFO    Thread-105:8363 [upload_job.py:push():143] Uploaded file /tmp/tmpq4bnzh21wandb/1t8zvj3q-media/images/Image plot_5_a62a45435a6dd4df1bad.png
+2023-01-05 11:57:35,870 INFO    Thread-13 :8363 [dir_watcher.py:_on_file_created():275] file/dir created: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/media/images/Image plot_5_44db27223bf76b0d7375.png
+2023-01-05 11:57:35,916 INFO    Thread-106:8363 [upload_job.py:push():143] Uploaded file /tmp/tmpq4bnzh21wandb/13r2z1mh-media/images/Image plot_5_26bdfb4f9aa337254eda.png
+2023-01-05 11:57:35,930 INFO    Thread-13 :8363 [dir_watcher.py:_on_file_created():275] file/dir created: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/media/images/Image plot_5_87914872c44e4c5bbb59.png
+2023-01-05 11:57:35,956 INFO    Thread-107:8363 [upload_job.py:push():143] Uploaded file /tmp/tmpq4bnzh21wandb/2jh2wm85-media/images/Image plot_5_221dce3b844b0450e21c.png
+2023-01-05 11:57:35,973 INFO    Thread-13 :8363 [dir_watcher.py:_on_file_created():275] file/dir created: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/media/images/Image plot_5_2682fb9da367146a47fd.png
+2023-01-05 11:57:35,988 INFO    Thread-108:8363 [upload_job.py:push():143] Uploaded file /tmp/tmpq4bnzh21wandb/30hxyo42-media/images/Image plot_5_5eb2f1d7ade3a17b061f.png
+2023-01-05 11:57:36,014 INFO    Thread-13 :8363 [dir_watcher.py:_on_file_created():275] file/dir created: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/media/images/Image plot_5_35f5ef4c0c942145b8ef.png
+2023-01-05 11:57:36,017 DEBUG   HandlerThread:8363 [handler.py:handle_request():139] handle_request: partial_history
+2023-01-05 11:57:36,025 DEBUG   SenderThread:8363 [sender.py:send():303] send: history
+2023-01-05 11:57:36,029 DEBUG   SenderThread:8363 [sender.py:send():303] send: summary
+2023-01-05 11:57:36,044 INFO    SenderThread:8363 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2023-01-05 11:57:36,051 DEBUG   SenderThread:8363 [sender.py:send():303] send: exit
+2023-01-05 11:57:36,052 INFO    Thread-13 :8363 [dir_watcher.py:_on_file_created():275] file/dir created: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/media/images/Image plot_5_a373ddb446774d0128eb.png
+2023-01-05 11:57:36,053 INFO    SenderThread:8363 [sender.py:send_exit():442] handling exit code: 0
+2023-01-05 11:57:36,055 INFO    SenderThread:8363 [sender.py:send_exit():444] handling runtime: 84
+2023-01-05 11:57:36,075 INFO    SenderThread:8363 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2023-01-05 11:57:36,081 INFO    SenderThread:8363 [sender.py:send_exit():450] send defer
+2023-01-05 11:57:36,085 DEBUG   HandlerThread:8363 [handler.py:handle_request():139] handle_request: defer
+2023-01-05 11:57:36,086 INFO    HandlerThread:8363 [handler.py:handle_request_defer():162] handle defer: 0
+2023-01-05 11:57:36,088 DEBUG   SenderThread:8363 [sender.py:send_request():317] send_request: defer
+2023-01-05 11:57:36,089 INFO    SenderThread:8363 [sender.py:send_request_defer():459] handle sender defer: 0
+2023-01-05 11:57:36,090 INFO    Thread-13 :8363 [dir_watcher.py:_on_file_created():275] file/dir created: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/media/images/Image plot_5_d58382946f0b583f2749.png
+2023-01-05 11:57:36,091 INFO    SenderThread:8363 [sender.py:transition_state():463] send defer: 1
+2023-01-05 11:57:36,095 DEBUG   HandlerThread:8363 [handler.py:handle_request():139] handle_request: defer
+2023-01-05 11:57:36,096 INFO    HandlerThread:8363 [handler.py:handle_request_defer():162] handle defer: 1
+2023-01-05 11:57:36,097 INFO    HandlerThread:8363 [system_monitor.py:finish():160] Stopping system monitor
+2023-01-05 11:57:36,102 DEBUG   SystemMonitor:8363 [system_monitor.py:_start():137] Finished system metrics aggregation loop
+2023-01-05 11:57:36,103 DEBUG   SystemMonitor:8363 [system_monitor.py:_start():141] Publishing last batch of metrics
+2023-01-05 11:57:36,104 INFO    HandlerThread:8363 [interfaces.py:finish():175] Joined cpu
+2023-01-05 11:57:36,107 INFO    HandlerThread:8363 [interfaces.py:finish():175] Joined disk
+2023-01-05 11:57:36,108 INFO    HandlerThread:8363 [interfaces.py:finish():175] Joined memory
+2023-01-05 11:57:36,109 INFO    HandlerThread:8363 [interfaces.py:finish():175] Joined network
+2023-01-05 11:57:36,115 DEBUG   SenderThread:8363 [sender.py:send_request():317] send_request: defer
+2023-01-05 11:57:36,119 INFO    SenderThread:8363 [sender.py:send_request_defer():459] handle sender defer: 1
+2023-01-05 11:57:36,121 INFO    SenderThread:8363 [sender.py:transition_state():463] send defer: 2
+2023-01-05 11:57:36,122 DEBUG   SenderThread:8363 [sender.py:send():303] send: stats
+2023-01-05 11:57:36,123 DEBUG   HandlerThread:8363 [handler.py:handle_request():139] handle_request: defer
+2023-01-05 11:57:36,126 INFO    Thread-110:8363 [upload_job.py:push():143] Uploaded file /tmp/tmpq4bnzh21wandb/pnj142v3-media/images/Image plot_5_1ef3aee21a5165e55c0b.png
+2023-01-05 11:57:36,126 INFO    HandlerThread:8363 [handler.py:handle_request_defer():162] handle defer: 2
+2023-01-05 11:57:36,128 INFO    Thread-13 :8363 [dir_watcher.py:_on_file_created():275] file/dir created: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/media/images/Image plot_5_68f2b97bd17500213be6.png
+2023-01-05 11:57:36,130 DEBUG   SenderThread:8363 [sender.py:send_request():317] send_request: defer
+2023-01-05 11:57:36,136 INFO    SenderThread:8363 [sender.py:send_request_defer():459] handle sender defer: 2
+2023-01-05 11:57:36,137 INFO    SenderThread:8363 [sender.py:transition_state():463] send defer: 3
+2023-01-05 11:57:36,139 DEBUG   HandlerThread:8363 [handler.py:handle_request():139] handle_request: defer
+2023-01-05 11:57:36,140 INFO    HandlerThread:8363 [handler.py:handle_request_defer():162] handle defer: 3
+2023-01-05 11:57:36,142 DEBUG   SenderThread:8363 [sender.py:send_request():317] send_request: defer
+2023-01-05 11:57:36,143 INFO    SenderThread:8363 [sender.py:send_request_defer():459] handle sender defer: 3
+2023-01-05 11:57:36,145 INFO    SenderThread:8363 [sender.py:transition_state():463] send defer: 4
+2023-01-05 11:57:36,147 DEBUG   HandlerThread:8363 [handler.py:handle_request():139] handle_request: defer
+2023-01-05 11:57:36,149 INFO    HandlerThread:8363 [handler.py:handle_request_defer():162] handle defer: 4
+2023-01-05 11:57:36,151 DEBUG   SenderThread:8363 [sender.py:send():303] send: summary
+2023-01-05 11:57:36,158 INFO    Thread-13 :8363 [dir_watcher.py:_on_file_created():275] file/dir created: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/media/images/Image plot_5_234c0a95b3b4bec06246.png
+2023-01-05 11:57:36,171 INFO    SenderThread:8363 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2023-01-05 11:57:36,177 DEBUG   SenderThread:8363 [sender.py:send_request():317] send_request: defer
+2023-01-05 11:57:36,179 INFO    SenderThread:8363 [sender.py:send_request_defer():459] handle sender defer: 4
+2023-01-05 11:57:36,180 INFO    SenderThread:8363 [sender.py:transition_state():463] send defer: 5
+2023-01-05 11:57:36,182 DEBUG   HandlerThread:8363 [handler.py:handle_request():139] handle_request: defer
+2023-01-05 11:57:36,184 INFO    HandlerThread:8363 [handler.py:handle_request_defer():162] handle defer: 5
+2023-01-05 11:57:36,186 DEBUG   SenderThread:8363 [sender.py:send_request():317] send_request: defer
+2023-01-05 11:57:36,187 INFO    SenderThread:8363 [sender.py:send_request_defer():459] handle sender defer: 5
+2023-01-05 11:57:36,189 INFO    SenderThread:8363 [sender.py:transition_state():463] send defer: 6
+2023-01-05 11:57:36,196 INFO    Thread-13 :8363 [dir_watcher.py:_on_file_created():275] file/dir created: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/media/images/Image plot_5_939ba1b1b1009ad8de9a.png
+2023-01-05 11:57:36,198 DEBUG   HandlerThread:8363 [handler.py:handle_request():139] handle_request: defer
+2023-01-05 11:57:36,202 INFO    Thread-109:8363 [upload_job.py:push():143] Uploaded file /tmp/tmpq4bnzh21wandb/3mjsf856-media/images/Image plot_5_3688b645792a20f16b50.png
+2023-01-05 11:57:36,206 INFO    HandlerThread:8363 [handler.py:handle_request_defer():162] handle defer: 6
+2023-01-05 11:57:36,208 DEBUG   SenderThread:8363 [sender.py:send_request():317] send_request: defer
+2023-01-05 11:57:36,210 INFO    SenderThread:8363 [sender.py:send_request_defer():459] handle sender defer: 6
+2023-01-05 11:57:36,214 INFO    Thread-112:8363 [upload_job.py:push():143] Uploaded file /tmp/tmpq4bnzh21wandb/2odwxzcy-media/images/Image plot_5_731c47b53ced70a46005.png
+2023-01-05 11:57:36,229 INFO    Thread-13 :8363 [dir_watcher.py:_on_file_created():275] file/dir created: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/media/images/Image plot_5_0eff4d2fc581dbd4edfa.png
+2023-01-05 11:57:36,241 INFO    Thread-111:8363 [upload_job.py:push():143] Uploaded file /tmp/tmpq4bnzh21wandb/3egtpzpe-media/images/Image plot_5_700c38d46a6dbe9c33e5.png
+2023-01-05 11:57:36,253 INFO    Thread-13 :8363 [dir_watcher.py:_on_file_created():275] file/dir created: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/media/images/Image plot_5_62e4011c8c064271d8dd.png
+2023-01-05 11:57:36,283 INFO    Thread-13 :8363 [dir_watcher.py:_on_file_created():275] file/dir created: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/media/images/Image plot_5_b7d80aae1789d1913e7b.png
+2023-01-05 11:57:36,299 INFO    Thread-113:8363 [upload_job.py:push():143] Uploaded file /tmp/tmpq4bnzh21wandb/1ntgdv9r-media/images/Image plot_5_30bf50095f3c424ecbf9.png
+2023-01-05 11:57:36,321 INFO    Thread-13 :8363 [dir_watcher.py:_on_file_created():275] file/dir created: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/media/images/Image plot_5_2e09d1f88f8009acd0cd.png
+2023-01-05 11:57:36,324 INFO    Thread-114:8363 [upload_job.py:push():143] Uploaded file /tmp/tmpq4bnzh21wandb/3eahigxe-media/images/Image plot_5_53cf690478fd772d81b5.png
+2023-01-05 11:57:36,340 INFO    Thread-115:8363 [upload_job.py:push():143] Uploaded file /tmp/tmpq4bnzh21wandb/14dq6yvn-media/images/Image plot_5_6f16a4ce1856565c7252.png
+2023-01-05 11:57:36,362 INFO    Thread-13 :8363 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/media/images
+2023-01-05 11:57:36,441 INFO    Thread-116:8363 [upload_job.py:push():143] Uploaded file /tmp/tmpq4bnzh21wandb/18m7qrnz-media/images/Image plot_5_b4771470bae6067687f8.png
+2023-01-05 11:57:36,617 INFO    Thread-118:8363 [upload_job.py:push():143] Uploaded file /tmp/tmpq4bnzh21wandb/356rp4sd-media/images/Image plot_5_987e213e464058d2c7bf.png
+2023-01-05 11:57:36,626 INFO    Thread-119:8363 [upload_job.py:push():143] Uploaded file /tmp/tmpq4bnzh21wandb/32siwg9e-media/images/Image plot_5_1e16d037c0ac108b1304.png
+2023-01-05 11:57:36,699 INFO    Thread-117:8363 [upload_job.py:push():143] Uploaded file /tmp/tmpq4bnzh21wandb/k0v1l05w-media/images/Image plot_5_039b1c279c8ddb473c51.png
+2023-01-05 11:57:36,715 INFO    Thread-101:8363 [upload_job.py:push():143] Uploaded file /tmp/tmpq4bnzh21wandb/1klshp32-media/images/Image plot_5_94189849cfa110d51e4b.png
+2023-01-05 11:57:36,722 INFO    Thread-121:8363 [upload_job.py:push():143] Uploaded file /tmp/tmpq4bnzh21wandb/i7lf642p-media/images/Image plot_5_acc19dca89652b87568c.png
+2023-01-05 11:57:36,727 INFO    Thread-120:8363 [upload_job.py:push():143] Uploaded file /tmp/tmpq4bnzh21wandb/2tlyryjb-media/images/Image plot_5_bd7ca669048182124cbe.png
+2023-01-05 11:57:36,805 INFO    Thread-122:8363 [upload_job.py:push():143] Uploaded file /tmp/tmpq4bnzh21wandb/t9nyubqh-media/images/Image plot_5_31e174f627729721da80.png
+2023-01-05 11:57:36,847 INFO    Thread-123:8363 [upload_job.py:push():143] Uploaded file /tmp/tmpq4bnzh21wandb/2wo3yhni-media/images/Image plot_5_fc42ba25f4e831d30258.png
+2023-01-05 11:57:36,895 INFO    Thread-124:8363 [upload_job.py:push():143] Uploaded file /tmp/tmpq4bnzh21wandb/31ul4aue-media/images/Image plot_5_32b3ecb3e7939d5f27e6.png
+2023-01-05 11:57:36,933 INFO    Thread-125:8363 [upload_job.py:push():143] Uploaded file /tmp/tmpq4bnzh21wandb/1389lw1s-media/images/Image plot_5_c18e24051c201f28aec8.png
+2023-01-05 11:57:36,997 INFO    Thread-126:8363 [upload_job.py:push():143] Uploaded file /tmp/tmpq4bnzh21wandb/1kgysal1-media/images/Image plot_5_ae433a942c743b2d4d8b.png
+2023-01-05 11:57:37,006 INFO    SenderThread:8363 [sender.py:transition_state():463] send defer: 7
+2023-01-05 11:57:37,009 DEBUG   HandlerThread:8363 [handler.py:handle_request():139] handle_request: defer
+2023-01-05 11:57:37,010 INFO    HandlerThread:8363 [handler.py:handle_request_defer():162] handle defer: 7
+2023-01-05 11:57:37,012 DEBUG   SenderThread:8363 [sender.py:send_request():317] send_request: defer
+2023-01-05 11:57:37,014 INFO    SenderThread:8363 [sender.py:send_request_defer():459] handle sender defer: 7
+2023-01-05 11:57:37,016 INFO    SenderThread:8363 [dir_watcher.py:finish():362] shutting down directory watcher
+2023-01-05 11:57:37,037 DEBUG   HandlerThread:8363 [handler.py:handle_request():139] handle_request: poll_exit
+2023-01-05 11:57:37,080 INFO    Thread-127:8363 [upload_job.py:push():143] Uploaded file /tmp/tmpq4bnzh21wandb/2fvx79hv-media/images/Image plot_5_7cab522dab08afbf7ed3.png
+2023-01-05 11:57:37,083 INFO    Thread-13 :8363 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/wandb-summary.json
+2023-01-05 11:57:37,130 INFO    Thread-129:8363 [upload_job.py:push():143] Uploaded file /tmp/tmpq4bnzh21wandb/3pey2gx5-media/images/Image plot_5_0fe09d42c5ae20eeff82.png
+2023-01-05 11:57:37,131 INFO    Thread-128:8363 [upload_job.py:push():143] Uploaded file /tmp/tmpq4bnzh21wandb/2voxigo3-media/images/Image plot_5_939ba1b1b1009ad8de9a.png
+2023-01-05 11:57:37,186 INFO    Thread-130:8363 [upload_job.py:push():143] Uploaded file /tmp/tmpq4bnzh21wandb/3m8ax38n-media/images/Image plot_5_62e4011c8c064271d8dd.png
+2023-01-05 11:57:37,258 INFO    Thread-131:8363 [upload_job.py:push():143] Uploaded file /tmp/tmpq4bnzh21wandb/1ejr5qvp-media/images/Image plot_5_234c0a95b3b4bec06246.png
+2023-01-05 11:57:37,339 INFO    Thread-132:8363 [upload_job.py:push():143] Uploaded file /tmp/tmpq4bnzh21wandb/1opjneit-media/images/Image plot_5_b7d80aae1789d1913e7b.png
+2023-01-05 11:57:37,375 INFO    Thread-133:8363 [upload_job.py:push():143] Uploaded file /tmp/tmpq4bnzh21wandb/3qqskp0c-media/images/Image plot_5_1ba20d2b57b25df2152f.png
+2023-01-05 11:57:37,428 INFO    Thread-134:8363 [upload_job.py:push():143] Uploaded file /tmp/tmpq4bnzh21wandb/1ghujfec-media/images/Image plot_5_fc0b6187001089323ded.png
+2023-01-05 11:57:37,501 INFO    Thread-135:8363 [upload_job.py:push():143] Uploaded file /tmp/tmpq4bnzh21wandb/1ookg1t0-media/images/Image plot_5_857a20c8b8030c5aa7cb.png
+2023-01-05 11:57:37,575 INFO    Thread-136:8363 [upload_job.py:push():143] Uploaded file /tmp/tmpq4bnzh21wandb/z2zx8wjs-media/images/Image plot_5_bf3d43d0340112fcaed4.png
+2023-01-05 11:57:37,628 INFO    Thread-137:8363 [upload_job.py:push():143] Uploaded file /tmp/tmpq4bnzh21wandb/1m8zug7z-media/images/Image plot_5_a60478015eefb505d478.png
+2023-01-05 11:57:37,685 INFO    Thread-138:8363 [upload_job.py:push():143] Uploaded file /tmp/tmpq4bnzh21wandb/2yk49gdw-media/images/Image plot_5_f6af4bbdf36ecf9e93e8.png
+2023-01-05 11:57:37,772 INFO    Thread-139:8363 [upload_job.py:push():143] Uploaded file /tmp/tmpq4bnzh21wandb/3up99188-media/images/Image plot_5_df7c6c614d89d2c95caf.png
+2023-01-05 11:57:37,796 INFO    Thread-140:8363 [upload_job.py:push():143] Uploaded file /tmp/tmpq4bnzh21wandb/1blxm6j5-media/images/Image plot_5_44db27223bf76b0d7375.png
+2023-01-05 11:57:37,803 INFO    SenderThread:8363 [dir_watcher.py:_on_file_created():275] file/dir created: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/media/images/Image plot_5_92a03253525b7bc41747.png
+2023-01-05 11:57:37,836 INFO    SenderThread:8363 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/media/images
+2023-01-05 11:57:37,843 INFO    SenderThread:8363 [dir_watcher.py:_on_file_modified():292] file/dir modified: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/output.log
+2023-01-05 11:57:37,853 INFO    SenderThread:8363 [dir_watcher.py:finish():392] scan: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files
+2023-01-05 11:57:37,862 INFO    SenderThread:8363 [dir_watcher.py:finish():406] scan save: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/conda-environment.yaml conda-environment.yaml
+2023-01-05 11:57:37,879 INFO    SenderThread:8363 [dir_watcher.py:finish():406] scan save: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/config.yaml config.yaml
+2023-01-05 11:57:37,893 INFO    Thread-141:8363 [upload_job.py:push():143] Uploaded file /tmp/tmpq4bnzh21wandb/1djg1zk5-media/images/Image plot_5_3d6e3de3c30496fc2b90.png
+2023-01-05 11:57:37,907 INFO    SenderThread:8363 [dir_watcher.py:finish():406] scan save: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/output.log output.log
+2023-01-05 11:57:37,921 INFO    Thread-142:8363 [upload_job.py:push():143] Uploaded file /tmp/tmpq4bnzh21wandb/185ntr05-media/images/Image plot_5_8c9185355ecd533dcfb1.png
+2023-01-05 11:57:37,924 INFO    SenderThread:8363 [dir_watcher.py:finish():406] scan save: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/requirements.txt requirements.txt
+2023-01-05 11:57:37,945 INFO    SenderThread:8363 [dir_watcher.py:finish():406] scan save: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/wandb-metadata.json wandb-metadata.json
+2023-01-05 11:57:37,952 INFO    SenderThread:8363 [dir_watcher.py:finish():406] scan save: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/wandb-summary.json wandb-summary.json
+2023-01-05 11:57:37,968 INFO    Thread-143:8363 [upload_job.py:push():143] Uploaded file /tmp/tmpq4bnzh21wandb/1r8bmx21-media/images/Image plot_5_6f16a4ce1856565c7252.png
+2023-01-05 11:57:37,994 INFO    Thread-144:8363 [upload_job.py:push():143] Uploaded file /tmp/tmpq4bnzh21wandb/3hgisa1u-media/images/Image plot_5_2e09d1f88f8009acd0cd.png
+2023-01-05 11:57:38,005 INFO    SenderThread:8363 [dir_watcher.py:finish():406] scan save: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/media/images/Image plot_5_009e9f7e2b492dfe713e.png media/images/Image plot_5_009e9f7e2b492dfe713e.png
+2023-01-05 11:57:38,006 INFO    SenderThread:8363 [dir_watcher.py:finish():406] scan save: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/media/images/Image plot_5_039b1c279c8ddb473c51.png media/images/Image plot_5_039b1c279c8ddb473c51.png
+2023-01-05 11:57:38,008 INFO    SenderThread:8363 [dir_watcher.py:finish():406] scan save: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/media/images/Image plot_5_04fb222b1bbf84d8b210.png media/images/Image plot_5_04fb222b1bbf84d8b210.png
+2023-01-05 11:57:38,009 INFO    SenderThread:8363 [dir_watcher.py:finish():406] scan save: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/media/images/Image plot_5_0573b91ddd98110eedad.png media/images/Image plot_5_0573b91ddd98110eedad.png
+2023-01-05 11:57:38,010 INFO    SenderThread:8363 [dir_watcher.py:finish():406] scan save: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/media/images/Image plot_5_07a860f2a6ee96a2cf05.png media/images/Image plot_5_07a860f2a6ee96a2cf05.png
+2023-01-05 11:57:38,011 INFO    SenderThread:8363 [dir_watcher.py:finish():406] scan save: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/media/images/Image plot_5_07e2a1cf7377cf82337b.png media/images/Image plot_5_07e2a1cf7377cf82337b.png
+2023-01-05 11:57:38,013 INFO    SenderThread:8363 [dir_watcher.py:finish():406] scan save: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/media/images/Image plot_5_0c0e9ed47b848d8cca5d.png media/images/Image plot_5_0c0e9ed47b848d8cca5d.png
+2023-01-05 11:57:38,014 INFO    SenderThread:8363 [dir_watcher.py:finish():406] scan save: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/media/images/Image plot_5_0d65537067c51e6a194f.png media/images/Image plot_5_0d65537067c51e6a194f.png
+2023-01-05 11:57:38,015 INFO    SenderThread:8363 [dir_watcher.py:finish():406] scan save: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/media/images/Image plot_5_0eff4d2fc581dbd4edfa.png media/images/Image plot_5_0eff4d2fc581dbd4edfa.png
+2023-01-05 11:57:38,016 INFO    SenderThread:8363 [dir_watcher.py:finish():406] scan save: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/media/images/Image plot_5_0fe09d42c5ae20eeff82.png media/images/Image plot_5_0fe09d42c5ae20eeff82.png
+2023-01-05 11:57:38,017 INFO    SenderThread:8363 [dir_watcher.py:finish():406] scan save: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/media/images/Image plot_5_138bfd27d23efc7606cb.png media/images/Image plot_5_138bfd27d23efc7606cb.png
+2023-01-05 11:57:38,019 INFO    SenderThread:8363 [dir_watcher.py:finish():406] scan save: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/media/images/Image plot_5_14245b091ce1f01b5a7e.png media/images/Image plot_5_14245b091ce1f01b5a7e.png
+2023-01-05 11:57:38,020 INFO    SenderThread:8363 [dir_watcher.py:finish():406] scan save: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/media/images/Image plot_5_167499c49be8bb6764f6.png media/images/Image plot_5_167499c49be8bb6764f6.png
+2023-01-05 11:57:38,025 INFO    SenderThread:8363 [dir_watcher.py:finish():406] scan save: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/media/images/Image plot_5_18653ac37296fa650634.png media/images/Image plot_5_18653ac37296fa650634.png
+2023-01-05 11:57:38,026 INFO    SenderThread:8363 [dir_watcher.py:finish():406] scan save: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/media/images/Image plot_5_18f390eb79f344f0a7c8.png media/images/Image plot_5_18f390eb79f344f0a7c8.png
+2023-01-05 11:57:38,027 INFO    SenderThread:8363 [dir_watcher.py:finish():406] scan save: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/media/images/Image plot_5_1ba20d2b57b25df2152f.png media/images/Image plot_5_1ba20d2b57b25df2152f.png
+2023-01-05 11:57:38,029 INFO    SenderThread:8363 [dir_watcher.py:finish():406] scan save: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/media/images/Image plot_5_1bcd393ea658cc8d5f38.png media/images/Image plot_5_1bcd393ea658cc8d5f38.png
+2023-01-05 11:57:38,030 INFO    SenderThread:8363 [dir_watcher.py:finish():406] scan save: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/media/images/Image plot_5_1e16d037c0ac108b1304.png media/images/Image plot_5_1e16d037c0ac108b1304.png
+2023-01-05 11:57:38,032 INFO    SenderThread:8363 [dir_watcher.py:finish():406] scan save: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/media/images/Image plot_5_1e30e0983a50691102b9.png media/images/Image plot_5_1e30e0983a50691102b9.png
+2023-01-05 11:57:38,033 INFO    SenderThread:8363 [dir_watcher.py:finish():406] scan save: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/media/images/Image plot_5_1ee28a2050055b2700aa.png media/images/Image plot_5_1ee28a2050055b2700aa.png
+2023-01-05 11:57:38,034 INFO    SenderThread:8363 [dir_watcher.py:finish():406] scan save: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/media/images/Image plot_5_1ef3aee21a5165e55c0b.png media/images/Image plot_5_1ef3aee21a5165e55c0b.png
+2023-01-05 11:57:38,036 INFO    SenderThread:8363 [dir_watcher.py:finish():406] scan save: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/media/images/Image plot_5_221dce3b844b0450e21c.png media/images/Image plot_5_221dce3b844b0450e21c.png
+2023-01-05 11:57:38,038 INFO    SenderThread:8363 [dir_watcher.py:finish():406] scan save: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/media/images/Image plot_5_234c0a95b3b4bec06246.png media/images/Image plot_5_234c0a95b3b4bec06246.png
+2023-01-05 11:57:38,040 INFO    SenderThread:8363 [dir_watcher.py:finish():406] scan save: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/media/images/Image plot_5_25b8622bc30c7302be22.png media/images/Image plot_5_25b8622bc30c7302be22.png
+2023-01-05 11:57:38,041 INFO    SenderThread:8363 [dir_watcher.py:finish():406] scan save: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/media/images/Image plot_5_2682fb9da367146a47fd.png media/images/Image plot_5_2682fb9da367146a47fd.png
+2023-01-05 11:57:38,045 INFO    SenderThread:8363 [dir_watcher.py:finish():406] scan save: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/media/images/Image plot_5_26bdfb4f9aa337254eda.png media/images/Image plot_5_26bdfb4f9aa337254eda.png
+2023-01-05 11:57:38,046 INFO    SenderThread:8363 [dir_watcher.py:finish():406] scan save: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/media/images/Image plot_5_28b855be952b345c8db5.png media/images/Image plot_5_28b855be952b345c8db5.png
+2023-01-05 11:57:38,048 INFO    SenderThread:8363 [dir_watcher.py:finish():406] scan save: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/media/images/Image plot_5_2e09d1f88f8009acd0cd.png media/images/Image plot_5_2e09d1f88f8009acd0cd.png
+2023-01-05 11:57:38,049 INFO    SenderThread:8363 [dir_watcher.py:finish():406] scan save: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/media/images/Image plot_5_30bf50095f3c424ecbf9.png media/images/Image plot_5_30bf50095f3c424ecbf9.png
+2023-01-05 11:57:38,051 INFO    SenderThread:8363 [dir_watcher.py:finish():406] scan save: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/media/images/Image plot_5_31e174f627729721da80.png media/images/Image plot_5_31e174f627729721da80.png
+2023-01-05 11:57:38,052 INFO    SenderThread:8363 [dir_watcher.py:finish():406] scan save: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/media/images/Image plot_5_32b3ecb3e7939d5f27e6.png media/images/Image plot_5_32b3ecb3e7939d5f27e6.png
+2023-01-05 11:57:38,054 INFO    SenderThread:8363 [dir_watcher.py:finish():406] scan save: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/media/images/Image plot_5_35f5ef4c0c942145b8ef.png media/images/Image plot_5_35f5ef4c0c942145b8ef.png
+2023-01-05 11:57:38,055 INFO    SenderThread:8363 [dir_watcher.py:finish():406] scan save: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/media/images/Image plot_5_3688b645792a20f16b50.png media/images/Image plot_5_3688b645792a20f16b50.png
+2023-01-05 11:57:38,057 INFO    SenderThread:8363 [dir_watcher.py:finish():406] scan save: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/media/images/Image plot_5_3a7fd10624c0368b4bad.png media/images/Image plot_5_3a7fd10624c0368b4bad.png
+2023-01-05 11:57:38,058 INFO    SenderThread:8363 [dir_watcher.py:finish():406] scan save: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/media/images/Image plot_5_3d6e3de3c30496fc2b90.png media/images/Image plot_5_3d6e3de3c30496fc2b90.png
+2023-01-05 11:57:38,059 INFO    SenderThread:8363 [dir_watcher.py:finish():406] scan save: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/media/images/Image plot_5_3dc2614179b196ee4703.png media/images/Image plot_5_3dc2614179b196ee4703.png
+2023-01-05 11:57:38,060 INFO    SenderThread:8363 [dir_watcher.py:finish():406] scan save: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/media/images/Image plot_5_449810b2c364ceb2b85b.png media/images/Image plot_5_449810b2c364ceb2b85b.png
+2023-01-05 11:57:38,065 INFO    SenderThread:8363 [dir_watcher.py:finish():406] scan save: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/media/images/Image plot_5_44db27223bf76b0d7375.png media/images/Image plot_5_44db27223bf76b0d7375.png
+2023-01-05 11:57:38,067 INFO    SenderThread:8363 [dir_watcher.py:finish():406] scan save: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/media/images/Image plot_5_45ec14f4ae9105da8e6d.png media/images/Image plot_5_45ec14f4ae9105da8e6d.png
+2023-01-05 11:57:38,069 INFO    SenderThread:8363 [dir_watcher.py:finish():406] scan save: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/media/images/Image plot_5_46493d3cd622b3350479.png media/images/Image plot_5_46493d3cd622b3350479.png
+2023-01-05 11:57:38,070 INFO    SenderThread:8363 [dir_watcher.py:finish():406] scan save: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/media/images/Image plot_5_4d9d5f416240376d20dd.png media/images/Image plot_5_4d9d5f416240376d20dd.png
+2023-01-05 11:57:38,071 INFO    SenderThread:8363 [dir_watcher.py:finish():406] scan save: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/media/images/Image plot_5_53cf690478fd772d81b5.png media/images/Image plot_5_53cf690478fd772d81b5.png
+2023-01-05 11:57:38,072 INFO    SenderThread:8363 [dir_watcher.py:finish():406] scan save: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/media/images/Image plot_5_5d754a74f926e6bd3dab.png media/images/Image plot_5_5d754a74f926e6bd3dab.png
+2023-01-05 11:57:38,073 INFO    SenderThread:8363 [dir_watcher.py:finish():406] scan save: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/media/images/Image plot_5_5eb2f1d7ade3a17b061f.png media/images/Image plot_5_5eb2f1d7ade3a17b061f.png
+2023-01-05 11:57:38,074 INFO    SenderThread:8363 [dir_watcher.py:finish():406] scan save: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/media/images/Image plot_5_62e4011c8c064271d8dd.png media/images/Image plot_5_62e4011c8c064271d8dd.png
+2023-01-05 11:57:38,076 INFO    SenderThread:8363 [dir_watcher.py:finish():406] scan save: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/media/images/Image plot_5_6886697fd5f83f4c356d.png media/images/Image plot_5_6886697fd5f83f4c356d.png
+2023-01-05 11:57:38,077 INFO    SenderThread:8363 [dir_watcher.py:finish():406] scan save: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/media/images/Image plot_5_68f2b97bd17500213be6.png media/images/Image plot_5_68f2b97bd17500213be6.png
+2023-01-05 11:57:38,079 INFO    SenderThread:8363 [dir_watcher.py:finish():406] scan save: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/media/images/Image plot_5_6d592ce9331bb0a734e7.png media/images/Image plot_5_6d592ce9331bb0a734e7.png
+2023-01-05 11:57:38,080 INFO    SenderThread:8363 [dir_watcher.py:finish():406] scan save: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/media/images/Image plot_5_6f16a4ce1856565c7252.png media/images/Image plot_5_6f16a4ce1856565c7252.png
+2023-01-05 11:57:38,081 INFO    SenderThread:8363 [dir_watcher.py:finish():406] scan save: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/media/images/Image plot_5_700c38d46a6dbe9c33e5.png media/images/Image plot_5_700c38d46a6dbe9c33e5.png
+2023-01-05 11:57:38,084 INFO    SenderThread:8363 [dir_watcher.py:finish():406] scan save: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/media/images/Image plot_5_731c47b53ced70a46005.png media/images/Image plot_5_731c47b53ced70a46005.png
+2023-01-05 11:57:38,085 INFO    SenderThread:8363 [dir_watcher.py:finish():406] scan save: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/media/images/Image plot_5_7c1fa883b496ffacae72.png media/images/Image plot_5_7c1fa883b496ffacae72.png
+2023-01-05 11:57:38,087 INFO    SenderThread:8363 [dir_watcher.py:finish():406] scan save: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/media/images/Image plot_5_7cab522dab08afbf7ed3.png media/images/Image plot_5_7cab522dab08afbf7ed3.png
+2023-01-05 11:57:38,089 INFO    SenderThread:8363 [dir_watcher.py:finish():406] scan save: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/media/images/Image plot_5_80f9a26306c13d205b80.png media/images/Image plot_5_80f9a26306c13d205b80.png
+2023-01-05 11:57:38,090 INFO    Thread-145:8363 [upload_job.py:push():143] Uploaded file /tmp/tmpq4bnzh21wandb/unwz3fkj-media/images/Image plot_5_fc42ba25f4e831d30258.png
+2023-01-05 11:57:38,091 INFO    SenderThread:8363 [dir_watcher.py:finish():406] scan save: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/media/images/Image plot_5_857a20c8b8030c5aa7cb.png media/images/Image plot_5_857a20c8b8030c5aa7cb.png
+2023-01-05 11:57:38,093 INFO    SenderThread:8363 [dir_watcher.py:finish():406] scan save: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/media/images/Image plot_5_87914872c44e4c5bbb59.png media/images/Image plot_5_87914872c44e4c5bbb59.png
+2023-01-05 11:57:38,095 INFO    SenderThread:8363 [dir_watcher.py:finish():406] scan save: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/media/images/Image plot_5_88841dfdd54ba28b6744.png media/images/Image plot_5_88841dfdd54ba28b6744.png
+2023-01-05 11:57:38,096 INFO    SenderThread:8363 [dir_watcher.py:finish():406] scan save: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/media/images/Image plot_5_8c9185355ecd533dcfb1.png media/images/Image plot_5_8c9185355ecd533dcfb1.png
+2023-01-05 11:57:38,097 INFO    SenderThread:8363 [dir_watcher.py:finish():406] scan save: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/media/images/Image plot_5_8e384070e1544730e8c4.png media/images/Image plot_5_8e384070e1544730e8c4.png
+2023-01-05 11:57:38,101 INFO    SenderThread:8363 [dir_watcher.py:finish():406] scan save: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/media/images/Image plot_5_90d4638819f57678d1dc.png media/images/Image plot_5_90d4638819f57678d1dc.png
+2023-01-05 11:57:38,102 INFO    SenderThread:8363 [dir_watcher.py:finish():406] scan save: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/media/images/Image plot_5_92a03253525b7bc41747.png media/images/Image plot_5_92a03253525b7bc41747.png
+2023-01-05 11:57:38,104 INFO    SenderThread:8363 [dir_watcher.py:finish():406] scan save: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/media/images/Image plot_5_939ba1b1b1009ad8de9a.png media/images/Image plot_5_939ba1b1b1009ad8de9a.png
+2023-01-05 11:57:38,108 INFO    SenderThread:8363 [dir_watcher.py:finish():406] scan save: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/media/images/Image plot_5_94189849cfa110d51e4b.png media/images/Image plot_5_94189849cfa110d51e4b.png
+2023-01-05 11:57:38,109 INFO    SenderThread:8363 [dir_watcher.py:finish():406] scan save: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/media/images/Image plot_5_95d5558996cd84d1ad52.png media/images/Image plot_5_95d5558996cd84d1ad52.png
+2023-01-05 11:57:38,110 INFO    SenderThread:8363 [dir_watcher.py:finish():406] scan save: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/media/images/Image plot_5_96325c64a6df3a006717.png media/images/Image plot_5_96325c64a6df3a006717.png
+2023-01-05 11:57:38,111 INFO    SenderThread:8363 [dir_watcher.py:finish():406] scan save: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/media/images/Image plot_5_9863ed6dda308fe38671.png media/images/Image plot_5_9863ed6dda308fe38671.png
+2023-01-05 11:57:38,113 INFO    SenderThread:8363 [dir_watcher.py:finish():406] scan save: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/media/images/Image plot_5_987e213e464058d2c7bf.png media/images/Image plot_5_987e213e464058d2c7bf.png
+2023-01-05 11:57:38,114 INFO    SenderThread:8363 [dir_watcher.py:finish():406] scan save: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/media/images/Image plot_5_9f8709b6efe36781dcc4.png media/images/Image plot_5_9f8709b6efe36781dcc4.png
+2023-01-05 11:57:38,115 INFO    SenderThread:8363 [dir_watcher.py:finish():406] scan save: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/media/images/Image plot_5_a008bcf7dc183f0de3b4.png media/images/Image plot_5_a008bcf7dc183f0de3b4.png
+2023-01-05 11:57:38,118 INFO    SenderThread:8363 [dir_watcher.py:finish():406] scan save: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/media/images/Image plot_5_a21c5077494143505cb8.png media/images/Image plot_5_a21c5077494143505cb8.png
+2023-01-05 11:57:38,119 INFO    SenderThread:8363 [dir_watcher.py:finish():406] scan save: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/media/images/Image plot_5_a373ddb446774d0128eb.png media/images/Image plot_5_a373ddb446774d0128eb.png
+2023-01-05 11:57:38,121 INFO    SenderThread:8363 [dir_watcher.py:finish():406] scan save: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/media/images/Image plot_5_a60478015eefb505d478.png media/images/Image plot_5_a60478015eefb505d478.png
+2023-01-05 11:57:38,123 INFO    SenderThread:8363 [dir_watcher.py:finish():406] scan save: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/media/images/Image plot_5_a62a45435a6dd4df1bad.png media/images/Image plot_5_a62a45435a6dd4df1bad.png
+2023-01-05 11:57:38,140 INFO    SenderThread:8363 [dir_watcher.py:finish():406] scan save: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/media/images/Image plot_5_a6929db96822b7de6f82.png media/images/Image plot_5_a6929db96822b7de6f82.png
+2023-01-05 11:57:38,144 INFO    SenderThread:8363 [dir_watcher.py:finish():406] scan save: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/media/images/Image plot_5_aa74b770cbe648f39080.png media/images/Image plot_5_aa74b770cbe648f39080.png
+2023-01-05 11:57:38,146 INFO    SenderThread:8363 [dir_watcher.py:finish():406] scan save: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/media/images/Image plot_5_acc19dca89652b87568c.png media/images/Image plot_5_acc19dca89652b87568c.png
+2023-01-05 11:57:38,150 INFO    Thread-146:8363 [upload_job.py:push():143] Uploaded file /tmp/tmpq4bnzh21wandb/12zlqbsq-media/images/Image plot_5_87914872c44e4c5bbb59.png
+2023-01-05 11:57:38,152 INFO    SenderThread:8363 [dir_watcher.py:finish():406] scan save: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/media/images/Image plot_5_ae433a942c743b2d4d8b.png media/images/Image plot_5_ae433a942c743b2d4d8b.png
+2023-01-05 11:57:38,166 INFO    SenderThread:8363 [dir_watcher.py:finish():406] scan save: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/media/images/Image plot_5_ae7d245a750f5b5759d3.png media/images/Image plot_5_ae7d245a750f5b5759d3.png
+2023-01-05 11:57:38,170 INFO    Thread-148:8363 [upload_job.py:push():143] Uploaded file /tmp/tmpq4bnzh21wandb/1yyaq6y8-media/images/Image plot_5_68f2b97bd17500213be6.png
+2023-01-05 11:57:38,171 INFO    SenderThread:8363 [dir_watcher.py:finish():406] scan save: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/media/images/Image plot_5_b046adfb68fe8ced089f.png media/images/Image plot_5_b046adfb68fe8ced089f.png
+2023-01-05 11:57:38,176 INFO    SenderThread:8363 [dir_watcher.py:finish():406] scan save: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/media/images/Image plot_5_b474ea930f3b2f5d0d1f.png media/images/Image plot_5_b474ea930f3b2f5d0d1f.png
+2023-01-05 11:57:38,177 INFO    SenderThread:8363 [dir_watcher.py:finish():406] scan save: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/media/images/Image plot_5_b4771470bae6067687f8.png media/images/Image plot_5_b4771470bae6067687f8.png
+2023-01-05 11:57:38,179 INFO    SenderThread:8363 [dir_watcher.py:finish():406] scan save: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/media/images/Image plot_5_b72a350e6b0df50861aa.png media/images/Image plot_5_b72a350e6b0df50861aa.png
+2023-01-05 11:57:38,180 INFO    SenderThread:8363 [dir_watcher.py:finish():406] scan save: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/media/images/Image plot_5_b7d80aae1789d1913e7b.png media/images/Image plot_5_b7d80aae1789d1913e7b.png
+2023-01-05 11:57:38,182 INFO    SenderThread:8363 [dir_watcher.py:finish():406] scan save: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/media/images/Image plot_5_b901db677b6489ade381.png media/images/Image plot_5_b901db677b6489ade381.png
+2023-01-05 11:57:38,183 INFO    SenderThread:8363 [dir_watcher.py:finish():406] scan save: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/media/images/Image plot_5_bd7ca669048182124cbe.png media/images/Image plot_5_bd7ca669048182124cbe.png
+2023-01-05 11:57:38,185 INFO    SenderThread:8363 [dir_watcher.py:finish():406] scan save: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/media/images/Image plot_5_bd83d44a6ee1011b1fd4.png media/images/Image plot_5_bd83d44a6ee1011b1fd4.png
+2023-01-05 11:57:38,186 INFO    SenderThread:8363 [dir_watcher.py:finish():406] scan save: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/media/images/Image plot_5_bf3d43d0340112fcaed4.png media/images/Image plot_5_bf3d43d0340112fcaed4.png
+2023-01-05 11:57:38,188 INFO    SenderThread:8363 [dir_watcher.py:finish():406] scan save: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/media/images/Image plot_5_c18e24051c201f28aec8.png media/images/Image plot_5_c18e24051c201f28aec8.png
+2023-01-05 11:57:38,189 INFO    SenderThread:8363 [dir_watcher.py:finish():406] scan save: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/media/images/Image plot_5_c3cd170eb6b57f91e727.png media/images/Image plot_5_c3cd170eb6b57f91e727.png
+2023-01-05 11:57:38,190 INFO    SenderThread:8363 [dir_watcher.py:finish():406] scan save: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/media/images/Image plot_5_c64d6454c6d2f8670fd9.png media/images/Image plot_5_c64d6454c6d2f8670fd9.png
+2023-01-05 11:57:38,191 INFO    SenderThread:8363 [dir_watcher.py:finish():406] scan save: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/media/images/Image plot_5_c91c8be862d77a242713.png media/images/Image plot_5_c91c8be862d77a242713.png
+2023-01-05 11:57:38,193 INFO    SenderThread:8363 [dir_watcher.py:finish():406] scan save: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/media/images/Image plot_5_d58382946f0b583f2749.png media/images/Image plot_5_d58382946f0b583f2749.png
+2023-01-05 11:57:38,194 INFO    SenderThread:8363 [dir_watcher.py:finish():406] scan save: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/media/images/Image plot_5_df7c6c614d89d2c95caf.png media/images/Image plot_5_df7c6c614d89d2c95caf.png
+2023-01-05 11:57:38,195 INFO    SenderThread:8363 [dir_watcher.py:finish():406] scan save: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/media/images/Image plot_5_e050176ec405e615f469.png media/images/Image plot_5_e050176ec405e615f469.png
+2023-01-05 11:57:38,196 INFO    SenderThread:8363 [dir_watcher.py:finish():406] scan save: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/media/images/Image plot_5_eba12bdc501074d59c51.png media/images/Image plot_5_eba12bdc501074d59c51.png
+2023-01-05 11:57:38,197 INFO    SenderThread:8363 [dir_watcher.py:finish():406] scan save: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/media/images/Image plot_5_f5ac652fba4cfe8fda1a.png media/images/Image plot_5_f5ac652fba4cfe8fda1a.png
+2023-01-05 11:57:38,198 INFO    SenderThread:8363 [dir_watcher.py:finish():406] scan save: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/media/images/Image plot_5_f6af4bbdf36ecf9e93e8.png media/images/Image plot_5_f6af4bbdf36ecf9e93e8.png
+2023-01-05 11:57:38,204 INFO    SenderThread:8363 [dir_watcher.py:finish():406] scan save: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/media/images/Image plot_5_f78b5e082139199a15f8.png media/images/Image plot_5_f78b5e082139199a15f8.png
+2023-01-05 11:57:38,206 INFO    SenderThread:8363 [dir_watcher.py:finish():406] scan save: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/media/images/Image plot_5_fc0b6187001089323ded.png media/images/Image plot_5_fc0b6187001089323ded.png
+2023-01-05 11:57:38,208 INFO    SenderThread:8363 [dir_watcher.py:finish():406] scan save: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/media/images/Image plot_5_fc42ba25f4e831d30258.png media/images/Image plot_5_fc42ba25f4e831d30258.png
+2023-01-05 11:57:38,209 INFO    SenderThread:8363 [sender.py:transition_state():463] send defer: 8
+2023-01-05 11:57:38,211 DEBUG   SenderThread:8363 [sender.py:send_request():317] send_request: poll_exit
+2023-01-05 11:57:38,215 DEBUG   HandlerThread:8363 [handler.py:handle_request():139] handle_request: defer
+2023-01-05 11:57:38,219 INFO    HandlerThread:8363 [handler.py:handle_request_defer():162] handle defer: 8
+2023-01-05 11:57:38,220 DEBUG   SenderThread:8363 [sender.py:send_request():317] send_request: defer
+2023-01-05 11:57:38,221 INFO    SenderThread:8363 [sender.py:send_request_defer():459] handle sender defer: 8
+2023-01-05 11:57:38,222 INFO    SenderThread:8363 [file_pusher.py:finish():168] shutting down file pusher
+2023-01-05 11:57:38,271 INFO    Thread-149:8363 [upload_job.py:push():143] Uploaded file /tmp/tmpq4bnzh21wandb/hz02wyu2-media/images/Image plot_5_eba12bdc501074d59c51.png
+2023-01-05 11:57:38,301 INFO    Thread-150:8363 [upload_job.py:push():143] Uploaded file /tmp/tmpq4bnzh21wandb/2swgaiyv-media/images/Image plot_5_ae7d245a750f5b5759d3.png
+2023-01-05 11:57:38,390 INFO    Thread-151:8363 [upload_job.py:push():143] Uploaded file /tmp/tmpq4bnzh21wandb/uwz28cbl-media/images/Image plot_5_94189849cfa110d51e4b.png
+2023-01-05 11:57:38,414 INFO    Thread-152:8363 [upload_job.py:push():143] Uploaded file /tmp/tmpq4bnzh21wandb/13o4085o-media/images/Image plot_5_a62a45435a6dd4df1bad.png
+2023-01-05 11:57:38,433 INFO    Thread-153:8363 [upload_job.py:push():143] Uploaded file /tmp/tmpq4bnzh21wandb/14vvdjb4-media/images/Image plot_5_138bfd27d23efc7606cb.png
+2023-01-05 11:57:38,557 INFO    Thread-154:8363 [upload_job.py:push():143] Uploaded file /tmp/tmpq4bnzh21wandb/1c8os9av-media/images/Image plot_5_039b1c279c8ddb473c51.png
+2023-01-05 11:57:38,617 INFO    Thread-155:8363 [upload_job.py:push():143] Uploaded file /tmp/tmpq4bnzh21wandb/39i6jxj0-media/images/Image plot_5_d58382946f0b583f2749.png
+2023-01-05 11:57:38,692 INFO    Thread-156:8363 [upload_job.py:push():143] Uploaded file /tmp/tmpq4bnzh21wandb/1pwo1c2p-media/images/Image plot_5_b046adfb68fe8ced089f.png
+2023-01-05 11:57:38,794 INFO    Thread-157:8363 [upload_job.py:push():143] Uploaded file /tmp/tmpq4bnzh21wandb/24kcbqgn-media/images/Image plot_5_731c47b53ced70a46005.png
+2023-01-05 11:57:38,800 INFO    Thread-158:8363 [upload_job.py:push():143] Uploaded file /tmp/tmpq4bnzh21wandb/3o0goj8k-media/images/Image plot_5_0c0e9ed47b848d8cca5d.png
+2023-01-05 11:57:38,914 INFO    Thread-159:8363 [upload_job.py:push():143] Uploaded file /tmp/tmpq4bnzh21wandb/2dqdrzzn-media/images/Image plot_5_1e16d037c0ac108b1304.png
+2023-01-05 11:57:38,988 INFO    Thread-160:8363 [upload_job.py:push():143] Uploaded file /tmp/tmpq4bnzh21wandb/3tg8wgbt-media/images/Image plot_5_35f5ef4c0c942145b8ef.png
+2023-01-05 11:57:39,097 INFO    Thread-161:8363 [upload_job.py:push():143] Uploaded file /tmp/tmpq4bnzh21wandb/2tcz8fa9-media/images/Image plot_5_14245b091ce1f01b5a7e.png
+2023-01-05 11:57:39,156 INFO    Thread-162:8363 [upload_job.py:push():143] Uploaded file /tmp/tmpq4bnzh21wandb/3qioltt3-media/images/Image plot_5_b72a350e6b0df50861aa.png
+2023-01-05 11:57:39,219 INFO    Thread-147:8363 [upload_job.py:push():143] Uploaded file /tmp/tmpq4bnzh21wandb/32k1658y-media/images/Image plot_5_6d592ce9331bb0a734e7.png
+2023-01-05 11:57:39,282 INFO    Thread-163:8363 [upload_job.py:push():143] Uploaded file /tmp/tmpq4bnzh21wandb/23pk41e7-media/images/Image plot_5_25b8622bc30c7302be22.png
+2023-01-05 11:57:39,325 INFO    Thread-164:8363 [upload_job.py:push():143] Uploaded file /tmp/tmpq4bnzh21wandb/1p1c5mdv-media/images/Image plot_5_0eff4d2fc581dbd4edfa.png
+2023-01-05 11:57:39,453 INFO    Thread-165:8363 [upload_job.py:push():143] Uploaded file /tmp/tmpq4bnzh21wandb/1zsjiuqs-media/images/Image plot_5_5eb2f1d7ade3a17b061f.png
+2023-01-05 11:57:39,495 INFO    Thread-166:8363 [upload_job.py:push():143] Uploaded file /tmp/tmpq4bnzh21wandb/2vkuk4ca-media/images/Image plot_5_c3cd170eb6b57f91e727.png
+2023-01-05 11:57:39,603 INFO    Thread-167:8363 [upload_job.py:push():143] Uploaded file /tmp/tmpq4bnzh21wandb/1mt8cm97-media/images/Image plot_5_04fb222b1bbf84d8b210.png
+2023-01-05 11:57:39,651 INFO    Thread-168:8363 [upload_job.py:push():143] Uploaded file /tmp/tmpq4bnzh21wandb/3o4kxpkh-media/images/Image plot_5_2682fb9da367146a47fd.png
+2023-01-05 11:57:39,756 INFO    Thread-169:8363 [upload_job.py:push():143] Uploaded file /tmp/tmpq4bnzh21wandb/3q0hry62-media/images/Image plot_5_acc19dca89652b87568c.png
+2023-01-05 11:57:39,816 INFO    Thread-170:8363 [upload_job.py:push():143] Uploaded file /tmp/tmpq4bnzh21wandb/295k5h8b-media/images/Image plot_5_96325c64a6df3a006717.png
+2023-01-05 11:57:39,894 INFO    Thread-171:8363 [upload_job.py:push():143] Uploaded file /tmp/tmpq4bnzh21wandb/5ba6xquu-media/images/Image plot_5_ae433a942c743b2d4d8b.png
+2023-01-05 11:57:39,942 INFO    Thread-172:8363 [upload_job.py:push():143] Uploaded file /tmp/tmpq4bnzh21wandb/1x9ajv7k-media/images/Image plot_5_90d4638819f57678d1dc.png
+2023-01-05 11:57:40,027 INFO    Thread-173:8363 [upload_job.py:push():143] Uploaded file /tmp/tmpq4bnzh21wandb/1626gi03-media/images/Image plot_5_3a7fd10624c0368b4bad.png
+2023-01-05 11:57:40,068 INFO    Thread-174:8363 [upload_job.py:push():143] Uploaded file /tmp/tmpq4bnzh21wandb/29pv17nu-media/images/Image plot_5_a373ddb446774d0128eb.png
+2023-01-05 11:57:40,154 INFO    Thread-175:8363 [upload_job.py:push():143] Uploaded file /tmp/tmpq4bnzh21wandb/215l0ww4-media/images/Image plot_5_0573b91ddd98110eedad.png
+2023-01-05 11:57:40,201 INFO    Thread-176:8363 [upload_job.py:push():143] Uploaded file /tmp/tmpq4bnzh21wandb/12g5fep0-media/images/Image plot_5_4d9d5f416240376d20dd.png
+2023-01-05 11:57:40,341 INFO    Thread-177:8363 [upload_job.py:push():143] Uploaded file /tmp/tmpq4bnzh21wandb/2jwrr137-media/images/Image plot_5_c91c8be862d77a242713.png
+2023-01-05 11:57:40,372 INFO    Thread-178:8363 [upload_job.py:push():143] Uploaded file /tmp/tmpq4bnzh21wandb/124c4vml-media/images/Image plot_5_88841dfdd54ba28b6744.png
+2023-01-05 11:57:40,571 INFO    Thread-180:8363 [upload_job.py:push():143] Uploaded file /tmp/tmpq4bnzh21wandb/1q3zrlks-media/images/Image plot_5_1e30e0983a50691102b9.png
+2023-01-05 11:57:40,622 INFO    Thread-181:8363 [upload_job.py:push():143] Uploaded file /tmp/tmpq4bnzh21wandb/2t77jquv-media/images/Image plot_5_92a03253525b7bc41747.png
+2023-01-05 11:57:40,704 INFO    Thread-182:8363 [upload_job.py:push():143] Uploaded file /tmp/tmpq4bnzh21wandb/3hzfwy9e-media/images/Image plot_5_b474ea930f3b2f5d0d1f.png
+2023-01-05 11:57:40,805 INFO    Thread-183:8363 [upload_job.py:push():143] Uploaded file /tmp/tmpq4bnzh21wandb/1hvfv5bs-media/images/Image plot_5_1ef3aee21a5165e55c0b.png
+2023-01-05 11:57:40,911 INFO    Thread-184:8363 [upload_job.py:push():143] Uploaded file /tmp/tmpq4bnzh21wandb/1sw94im5-media/images/Image plot_5_c18e24051c201f28aec8.png
+2023-01-05 11:57:40,995 INFO    Thread-179:8363 [upload_job.py:push():143] Uploaded file /tmp/tmpq4bnzh21wandb/3oecpi8c-media/images/Image plot_5_07e2a1cf7377cf82337b.png
+2023-01-05 11:57:41,022 INFO    Thread-185:8363 [upload_job.py:push():143] Uploaded file /tmp/tmpq4bnzh21wandb/2i99fhtr-media/images/Image plot_5_32b3ecb3e7939d5f27e6.png
+2023-01-05 11:57:41,094 INFO    Thread-186:8363 [upload_job.py:push():143] Uploaded file /tmp/tmpq4bnzh21wandb/3cnaxcmm-media/images/Image plot_5_f6af4bbdf36ecf9e93e8.png
+2023-01-05 11:57:41,167 INFO    Thread-187:8363 [upload_job.py:push():143] Uploaded file /tmp/tmpq4bnzh21wandb/12awxqrn-media/images/Image plot_5_fc0b6187001089323ded.png
+2023-01-05 11:57:41,308 INFO    Thread-189:8363 [upload_job.py:push():143] Uploaded file /tmp/tmpq4bnzh21wandb/crdnhs8n-media/images/Image plot_5_90d4638819f57678d1dc.png
+2023-01-05 11:57:41,421 INFO    Thread-190:8363 [upload_job.py:push():143] Uploaded file /tmp/tmpq4bnzh21wandb/4a2ago91-media/images/Image plot_5_b72a350e6b0df50861aa.png
+2023-01-05 11:57:41,496 INFO    Thread-191:8363 [upload_job.py:push():143] Uploaded file /tmp/tmpq4bnzh21wandb/2z1su25c-media/images/Image plot_5_0c0e9ed47b848d8cca5d.png
+2023-01-05 11:57:41,558 INFO    Thread-188:8363 [upload_job.py:push():143] Uploaded file /tmp/tmpq4bnzh21wandb/r3fpoelh-media/images/Image plot_5_4d9d5f416240376d20dd.png
+2023-01-05 11:57:41,598 INFO    Thread-192:8363 [upload_job.py:push():143] Uploaded file /tmp/tmpq4bnzh21wandb/1ha9qij3-media/images/Image plot_5_857a20c8b8030c5aa7cb.png
+2023-01-05 11:57:41,681 INFO    Thread-193:8363 [upload_job.py:push():143] Uploaded file /tmp/tmpq4bnzh21wandb/xqan8qxj-media/images/Image plot_5_8c9185355ecd533dcfb1.png
+2023-01-05 11:57:41,761 INFO    Thread-194:8363 [upload_job.py:push():143] Uploaded file /tmp/tmpq4bnzh21wandb/2feg97r7-media/images/Image plot_5_1ba20d2b57b25df2152f.png
+2023-01-05 11:57:41,854 INFO    Thread-195:8363 [upload_job.py:push():143] Uploaded file /tmp/tmpq4bnzh21wandb/2on9xx30-media/images/Image plot_5_ae7d245a750f5b5759d3.png
+2023-01-05 11:57:41,961 INFO    Thread-196:8363 [upload_job.py:push():143] Uploaded file /tmp/tmpq4bnzh21wandb/by3hhsat-media/images/Image plot_5_c3cd170eb6b57f91e727.png
+2023-01-05 11:57:42,037 DEBUG   HandlerThread:8363 [handler.py:handle_request():139] handle_request: keepalive
+2023-01-05 11:57:42,073 INFO    Thread-197:8363 [upload_job.py:push():143] Uploaded file /tmp/tmpq4bnzh21wandb/13orzfq6-media/images/Image plot_5_96325c64a6df3a006717.png
+2023-01-05 11:57:42,139 INFO    Thread-198:8363 [upload_job.py:push():143] Uploaded file /tmp/tmpq4bnzh21wandb/2bq0l61i-media/images/Image plot_5_7cab522dab08afbf7ed3.png
+2023-01-05 11:57:42,346 INFO    Thread-200:8363 [upload_job.py:push():143] Uploaded file /tmp/tmpq4bnzh21wandb/a2ebo6i5-media/images/Image plot_5_138bfd27d23efc7606cb.png
+2023-01-05 11:57:42,428 INFO    Thread-201:8363 [upload_job.py:push():143] Uploaded file /tmp/tmpq4bnzh21wandb/33aqoksr-media/images/Image plot_5_0fe09d42c5ae20eeff82.png
+2023-01-05 11:57:42,543 INFO    Thread-202:8363 [upload_job.py:push():143] Uploaded file /tmp/tmpq4bnzh21wandb/2g40r74v-media/images/Image plot_5_07e2a1cf7377cf82337b.png
+2023-01-05 11:57:42,655 INFO    Thread-203:8363 [upload_job.py:push():143] Uploaded file /tmp/tmpq4bnzh21wandb/2np5mtul-media/images/Image plot_5_44db27223bf76b0d7375.png
+2023-01-05 11:57:42,771 INFO    Thread-204:8363 [upload_job.py:push():143] Uploaded file /tmp/tmpq4bnzh21wandb/2l3mct52-media/images/Image plot_5_87914872c44e4c5bbb59.png
+2023-01-05 11:57:42,836 INFO    Thread-205:8363 [upload_job.py:push():143] Uploaded file /tmp/tmpq4bnzh21wandb/3u5yyhbm-media/images/Image plot_5_2682fb9da367146a47fd.png
+2023-01-05 11:57:42,942 INFO    Thread-206:8363 [upload_job.py:push():143] Uploaded file /tmp/tmpq4bnzh21wandb/1zakw9z0-media/images/Image plot_5_35f5ef4c0c942145b8ef.png
+2023-01-05 11:57:43,081 INFO    Thread-207:8363 [upload_job.py:push():143] Uploaded file /tmp/tmpq4bnzh21wandb/mwp9gckv-media/images/Image plot_5_a373ddb446774d0128eb.png
+2023-01-05 11:57:43,126 INFO    Thread-208:8363 [upload_job.py:push():143] Uploaded file /tmp/tmpq4bnzh21wandb/j1poa8w8-media/images/Image plot_5_d58382946f0b583f2749.png
+2023-01-05 11:57:43,292 INFO    Thread-209:8363 [upload_job.py:push():143] Uploaded file /tmp/tmpq4bnzh21wandb/1bazf580-media/images/Image plot_5_68f2b97bd17500213be6.png
+2023-01-05 11:57:43,300 INFO    Thread-210:8363 [upload_job.py:push():143] Uploaded file /tmp/tmpq4bnzh21wandb/313rfrlt-media/images/Image plot_5_234c0a95b3b4bec06246.png
+2023-01-05 11:57:43,320 INFO    Thread-199:8363 [upload_job.py:push():143] Uploaded file /tmp/tmpq4bnzh21wandb/1cw4ji0x-media/images/Image plot_5_bf3d43d0340112fcaed4.png
+2023-01-05 11:57:43,360 INFO    Thread-211:8363 [upload_job.py:push():143] Uploaded file /tmp/tmpq4bnzh21wandb/1ziodfxb-media/images/Image plot_5_939ba1b1b1009ad8de9a.png
+2023-01-05 11:57:43,482 INFO    Thread-212:8363 [upload_job.py:push():143] Uploaded file /tmp/tmpq4bnzh21wandb/30uwzmr2-media/images/Image plot_5_0eff4d2fc581dbd4edfa.png
+2023-01-05 11:57:43,568 INFO    Thread-213:8363 [upload_job.py:push():143] Uploaded file /tmp/tmpq4bnzh21wandb/2sbx3qb0-media/images/Image plot_5_62e4011c8c064271d8dd.png
+2023-01-05 11:57:43,647 INFO    Thread-214:8363 [upload_job.py:push():143] Uploaded file /tmp/tmpq4bnzh21wandb/cejq1cw5-media/images/Image plot_5_b7d80aae1789d1913e7b.png
+2023-01-05 11:57:43,732 INFO    Thread-215:8363 [upload_job.py:push():143] Uploaded file /tmp/tmpq4bnzh21wandb/k34t2zdo-media/images/Image plot_5_2e09d1f88f8009acd0cd.png
+2023-01-05 11:57:43,858 INFO    Thread-218:8363 [upload_job.py:push():143] Uploaded file /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/config.yaml
+2023-01-05 11:57:43,861 INFO    Thread-219:8363 [upload_job.py:push():143] Uploaded file /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/output.log
+2023-01-05 11:57:43,863 INFO    Thread-217:8363 [upload_job.py:push():143] Uploaded file /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/conda-environment.yaml
+2023-01-05 11:57:43,878 INFO    Thread-216:8363 [upload_job.py:push():143] Uploaded file /tmp/tmpq4bnzh21wandb/1qq63ox9-media/images/Image plot_5_92a03253525b7bc41747.png
+2023-01-05 11:57:43,898 INFO    Thread-220:8363 [upload_job.py:push():143] Uploaded file /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/requirements.txt
+2023-01-05 11:57:43,928 INFO    Thread-221:8363 [upload_job.py:push():143] Uploaded file /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/files/wandb-summary.json
+2023-01-05 11:57:44,132 INFO    Thread-12 (_thread_body):8363 [sender.py:transition_state():463] send defer: 9
+2023-01-05 11:57:44,135 DEBUG   HandlerThread:8363 [handler.py:handle_request():139] handle_request: defer
+2023-01-05 11:57:44,137 INFO    HandlerThread:8363 [handler.py:handle_request_defer():162] handle defer: 9
+2023-01-05 11:57:44,139 DEBUG   SenderThread:8363 [sender.py:send_request():317] send_request: defer
+2023-01-05 11:57:44,141 INFO    SenderThread:8363 [sender.py:send_request_defer():459] handle sender defer: 9
+2023-01-05 11:57:44,143 INFO    SenderThread:8363 [file_pusher.py:join():173] waiting for file pusher
+2023-01-05 11:57:44,145 INFO    SenderThread:8363 [sender.py:transition_state():463] send defer: 10
+2023-01-05 11:57:44,147 DEBUG   HandlerThread:8363 [handler.py:handle_request():139] handle_request: defer
+2023-01-05 11:57:44,149 INFO    HandlerThread:8363 [handler.py:handle_request_defer():162] handle defer: 10
+2023-01-05 11:57:44,151 DEBUG   SenderThread:8363 [sender.py:send_request():317] send_request: defer
+2023-01-05 11:57:44,153 INFO    SenderThread:8363 [sender.py:send_request_defer():459] handle sender defer: 10
+2023-01-05 11:57:44,359 INFO    SenderThread:8363 [sender.py:transition_state():463] send defer: 11
+2023-01-05 11:57:44,373 DEBUG   HandlerThread:8363 [handler.py:handle_request():139] handle_request: defer
+2023-01-05 11:57:44,375 INFO    HandlerThread:8363 [handler.py:handle_request_defer():162] handle defer: 11
+2023-01-05 11:57:44,377 DEBUG   SenderThread:8363 [sender.py:send_request():317] send_request: defer
+2023-01-05 11:57:44,378 INFO    SenderThread:8363 [sender.py:send_request_defer():459] handle sender defer: 11
+2023-01-05 11:57:44,385 INFO    SenderThread:8363 [sender.py:transition_state():463] send defer: 12
+2023-01-05 11:57:44,388 DEBUG   SenderThread:8363 [sender.py:send():303] send: final
+2023-01-05 11:57:44,390 DEBUG   HandlerThread:8363 [handler.py:handle_request():139] handle_request: defer
+2023-01-05 11:57:44,391 DEBUG   SenderThread:8363 [sender.py:send():303] send: footer
+2023-01-05 11:57:44,392 INFO    HandlerThread:8363 [handler.py:handle_request_defer():162] handle defer: 12
+2023-01-05 11:57:44,396 DEBUG   SenderThread:8363 [sender.py:send_request():317] send_request: defer
+2023-01-05 11:57:44,398 INFO    SenderThread:8363 [sender.py:send_request_defer():459] handle sender defer: 12
+2023-01-05 11:57:44,407 DEBUG   HandlerThread:8363 [handler.py:handle_request():139] handle_request: poll_exit
+2023-01-05 11:57:44,410 DEBUG   HandlerThread:8363 [handler.py:handle_request():139] handle_request: server_info
+2023-01-05 11:57:44,411 DEBUG   SenderThread:8363 [sender.py:send_request():317] send_request: poll_exit
+2023-01-05 11:57:44,412 DEBUG   HandlerThread:8363 [handler.py:handle_request():139] handle_request: get_summary
+2023-01-05 11:57:44,415 DEBUG   SenderThread:8363 [sender.py:send_request():317] send_request: server_info
+2023-01-05 11:57:44,421 DEBUG   HandlerThread:8363 [handler.py:handle_request():139] handle_request: sampled_history
+2023-01-05 11:57:44,873 INFO    MainThread:8363 [wandb_run.py:_footer_history_summary_info():3408] rendering history
+2023-01-05 11:57:44,875 INFO    MainThread:8363 [wandb_run.py:_footer_history_summary_info():3440] rendering summary
+2023-01-05 11:57:44,877 INFO    MainThread:8363 [wandb_run.py:_footer_sync_info():3364] logging synced files
+2023-01-05 11:57:44,880 DEBUG   HandlerThread:8363 [handler.py:handle_request():139] handle_request: shutdown
+2023-01-05 11:57:44,881 INFO    HandlerThread:8363 [handler.py:finish():814] shutting down handler
+2023-01-05 11:57:45,390 INFO    WriterThread:8363 [datastore.py:close():279] close: /mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/wandb/run-20230105_115609-1p3d23l6/run-1p3d23l6.wandb
+2023-01-05 11:57:45,873 INFO    SenderThread:8363 [sender.py:finish():1331] shutting down sender
+2023-01-05 11:57:45,874 INFO    SenderThread:8363 [file_pusher.py:finish():168] shutting down file pusher
+2023-01-05 11:57:45,876 INFO    SenderThread:8363 [file_pusher.py:join():173] waiting for file pusher
+2023-01-05 11:57:45,944 INFO    MainThread:8363 [internal.py:handle_exit():77] Internal process exited

@@ -1,0 +1,77 @@
+{
+    "os": "Linux-5.15.79.1-microsoft-standard-WSL2-x86_64-with-glibc2.35",
+    "python": "3.10.8",
+    "heartbeatAt": "2023-01-05T10:55:31.365182",
+    "startedAt": "2023-01-05T10:55:29.192451",
+    "docker": null,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "/mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS/S4/vae_mnist_working.py",
+    "codePath": "S4/vae_mnist_working.py",
+    "git": {
+        "remote": "ssh://github.com/marcusroberto02/MLOPS.git",
+        "commit": "c12685f994075982ad0364227db89ec25cc7c393"
+    },
+    "email": "marcusrobertonielsen02@gmail.com",
+    "root": "/mnt/c/Users/marcu/Google Drev/DTU/02476_MLOPS/MLOPS",
+    "host": "DESKTOP-48IBAR0",
+    "username": "marcusroberto",
+    "executable": "/home/marcusroberto/miniconda3/envs/myenv/bin/python",
+    "cpu_count": 4,
+    "cpu_count_logical": 8,
+    "cpu_freq": {
+        "current": 1497.6039999999998,
+        "min": 0.0,
+        "max": 0.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 1497.604,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1497.604,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1497.604,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1497.604,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1497.604,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1497.604,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1497.604,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1497.604,
+            "min": 0.0,
+            "max": 0.0
+        }
+    ],
+    "disk": {
+        "total": 1006.853931427002,
+        "used": 10.277050018310547
+    },
+    "memory": {
+        "total": 7.558567047119141
+    }
+}
