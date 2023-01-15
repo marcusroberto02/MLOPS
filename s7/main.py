@@ -4,8 +4,9 @@ from enum import Enum
 import re
 from pydantic import BaseModel
 from fastapi import UploadFile, File
-from typing import Optional
+from multipart import __version__
 import cv2
+from fastapi.responses import FileResponse
 
 app = FastAPI()
 
@@ -67,11 +68,16 @@ def login(username: str, password: str):
 
 
 @app.post("/cv_model/")
-async def cv_model(data: UploadFile = File(...)):
+async def cv_model(data: UploadFile = File(...), h=28, w=28):
     with open('image.jpg', 'wb') as image:
         content = await data.read()
         image.write(content)
         image.close()
+
+    img = cv2.imread("image.jpg")
+    res = cv2.resize(img, (h, w))
+    cv2.imwrite('image_resize.jpg', res)
+    FileResponse('image_resize.jpg')
 
     response = {
         "input": data,
