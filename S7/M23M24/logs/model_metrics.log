@@ -1,0 +1,8 @@
+2023-01-15T14:42:23,448 - HandlerTime.Milliseconds:133.13|#ModelName:my_fancy_model,Level:Model|#hostname:DESKTOP-48IBAR0,requestID:11fd652c-a14d-4868-a6f9-c52e8d6736f3,timestamp:1673790143
+2023-01-15T14:42:23,450 - PredictionTime.Milliseconds:133.41|#ModelName:my_fancy_model,Level:Model|#hostname:DESKTOP-48IBAR0,requestID:11fd652c-a14d-4868-a6f9-c52e8d6736f3,timestamp:1673790143
+2023-01-15T14:44:12,998 - HandlerTime.Milliseconds:162.71|#ModelName:my_fancy_model,Level:Model|#hostname:DESKTOP-48IBAR0,requestID:ee58df80-f0f6-4501-8381-4ca43c7c6ed1,timestamp:1673790252
+2023-01-15T14:44:13,001 - PredictionTime.Milliseconds:162.95|#ModelName:my_fancy_model,Level:Model|#hostname:DESKTOP-48IBAR0,requestID:ee58df80-f0f6-4501-8381-4ca43c7c6ed1,timestamp:1673790252
+2023-01-15T14:45:53,425 - HandlerTime.Milliseconds:155.87|#ModelName:my_fancy_model,Level:Model|#hostname:DESKTOP-48IBAR0,requestID:df272308-9e79-46c1-89a0-d56e872281fe,timestamp:1673790353
+2023-01-15T14:45:53,427 - PredictionTime.Milliseconds:156.13|#ModelName:my_fancy_model,Level:Model|#hostname:DESKTOP-48IBAR0,requestID:df272308-9e79-46c1-89a0-d56e872281fe,timestamp:1673790353
+2023-01-15T14:46:52,412 - HandlerTime.Milliseconds:179.72|#ModelName:my_fancy_model,Level:Model|#hostname:DESKTOP-48IBAR0,requestID:38eac508-9eca-471e-95a3-6ba032d400b1,timestamp:1673790412
+2023-01-15T14:46:52,415 - PredictionTime.Milliseconds:180.01|#ModelName:my_fancy_model,Level:Model|#hostname:DESKTOP-48IBAR0,requestID:38eac508-9eca-471e-95a3-6ba032d400b1,timestamp:1673790412
